@@ -1636,7 +1636,7 @@ body .info-card .text { color: #cfcfcf }
 #app .container { background: rgb(0 0 0 / 80%) }
 #app .player-interaction-favorite:hover { background: rgba(0, 162, 255, 1) }
 #app .player-interaction-favorite { background: rgb(0 0 0 / 80%) }
-#app .player-interaction__title, .player-interaction__title_active { color: #8b8b8bff !important } 
+#app .player-interaction__title, .player-interaction__title_active { color: #ff0077ff !important } 
 #app .player-interaction__container:after, .player-interaction__container:before { background: 0 0 !important }
 #app .player-interaction__icon, .player-interaction__icon_active { fill: white !important }
 #app .player-interaction__container { background: rgb(0 0 0 / 80%); border: none }
