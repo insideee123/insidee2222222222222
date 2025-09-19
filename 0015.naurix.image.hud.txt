@@ -945,8 +945,8 @@ body .window-table__item.selected:hover {
     margin-top: .46vh;
 }
 #app .hud-radmir-radar__map {
-    border-radius: 0%;
-    border: 0.65vh solid #000000!important
+    border-radius: 100%;
+    border: 0.85vh solid #000000!important
 }
 
 body #app .hud-radmir-radar__map {
