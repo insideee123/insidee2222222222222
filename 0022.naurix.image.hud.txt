@@ -485,12 +485,12 @@ body .window-table__item.selected:hover {
 }
 
 #app .player-interaction-layer {
-    background: #00000080;
-    border: #000000c2
+    background: rgb(0 0 0 / 80%);
+    border: none
 }
 
 #app .player-interaction__container {
-    background: #00000080;
+    background: rgb(0 0 0 / 80%);
     border: none
 }
 
@@ -506,19 +506,19 @@ body .window-table__item.selected:hover {
 
 #app .player-interaction__container:after,
 .player-interaction__container:before {
-    background: #00000080 !important
+    background: 0 0 !important
 }
 
 #app .player-interaction-favorite {
-    background: #00000080
+    background: rgb(0 0 0 / 80%)
 }
 
 #app .player-interaction-favorite:hover {
-    background: #00000080
+    background: rgba(63, 63, 63, .8)
 }
 
 #app .container {
-    background: #00000080
+    background: rgb(0 0 0 / 80%)
 }
 
 #app .vue3-slider .track-filled,
@@ -529,7 +529,6 @@ body .window-table__item.selected:hover {
 #app .player-interaction__icon {
     fill: white
 }
-
 /* ------- Меню заправки ------- */
 #app .fuel__container {
     background: #000000cc
