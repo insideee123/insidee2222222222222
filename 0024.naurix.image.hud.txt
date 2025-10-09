@@ -1782,11 +1782,11 @@ body #app .hud-radmir-speedometer-secondary__data-text {
        width: 20.52vh;
        height: 8.2vh;;
        left:6.3vh;
-       bottom:22.3vh
+       bottom:11.3vh
       }
       .Old-Fixed-ZZ_icon{
-       width:6.5vh;
-       height:4.5vh
+       width:3.5vh;
+       height:2.5vh
       }
       .Old-Fixed-Freeze
         position: absolute;
@@ -2278,7 +2278,7 @@ body .authorization{background:0 0}#app .authorization{background-image:url();ba
         greenZone: (isVisible) => {
             const greenZoneEl = document.querySelector(".Old-Fixed-ZZ");
             if (greenZoneEl) {
-                greenZoneEl.style.display = isVisible ? "" : "none";
+                greenZoneEl.style.display = isVisible ? "" : "";
             }
         },
     };
