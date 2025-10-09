@@ -1777,12 +1777,12 @@ body #app .hud-radmir-speedometer-secondary__data-text {
         right: 0;
         top: 20px;
       }
-      .Old-Fixed-ZZ{
-       position:
-       width: 20.52vh;
-       height: 8.2vh;;
-       left:6.3vh;
-       bottom:11.3vh
+      .OLD-RADMIR-green-zone__main {
+       position: absolute;
+       left: 10.6vh;
+       bottom: -76vh;
+       display: flex;
+       align-items: center;
       }
       .Old-Fixed-ZZ_icon{
        width:3.5vh;
