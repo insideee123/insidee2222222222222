@@ -1780,8 +1780,8 @@ body #app .hud-radmir-speedometer-secondary__data-text {
       }
       .Old-Fixed-ZZ
        position:absolute;
-       left:21.3vh;
-       bottom:21.3vh
+       left:1.3vh;
+       bottom:1.3vh
       }
       .Old-Fixed-ZZ_icon{
        width:4.5vh;
