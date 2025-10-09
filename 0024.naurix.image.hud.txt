@@ -466,7 +466,7 @@ body .window-table__item.selected:hover {
 
 /* -radial-d813e184.svg- */
 #app .player-interaction__container {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTkwIiBoZWlnaHQ9IjU5MCIgdmlld0JveD0iMCAwIDU5MCA1OTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBkPSJNNDE2LjYwNyAxLjE2Nzk3TDM2Mi4zNzEgMTMyLjIxNU0xNzMuMzk0IDU4OC44MjdMMjI3LjY4OSA0NTcuNjM2TTEuMTcwOSAxNzMuMzkxTDEzMi4yNDIgMjI3LjYzN001ODguNzU4IDE3My4yMThMNDU3LjgxOCAyMjcuNU0xLjI0MjUxIDQxNi43NzdMMTMyLjQ5OSAzNjIuMzY0TTE3My4yMjEgMS4yMzk1NkwyMjcuNjM2IDEzMi41IiBzdHJva2U9IiNGNEYxRTEiIHN0cm9rZS1vcGFjaXR5PSIwLjQiLz4NCjxwYXRoIGQ9Ik01ODguODMxIDQxNi42MDVMNDU3Ljc2MyAzNjIuMzU5TTQxNi43ODIgNTg4Ljc1NkwzNjIuNDQ5IDQ1Ny42OTQiIHN0cm9rZT0iI0Y0RjFFMSIgc3Ryb2tlLW9wYWNpdHk9IjAuNCIvPg0KPC9zdmc+DQo=) center/cover no-repeat
+    background: url() center/cover no-repeat
 }
 
 /* -bg_mobile-ec8a6a73.png- */
@@ -506,7 +506,8 @@ body .window-table__item.selected:hover {
 
 #app .player-interaction__container:after,
 .player-interaction__container:before {
-    background: 0 0 !important
+    background: rgb(0 0 0 / 80%);
+ !important
 }
 
 #app .player-interaction-favorite {
@@ -536,7 +537,7 @@ body .window-table__item.selected:hover {
 }
 
 #app .fuel__button .text:before {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMS40NTEgMUw0LjQ4NCA3Ljg0OEwxIDQuNDI0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPg0KPC9zdmc+DQo=) center/contain no-repeat !important
+    background: url() center/contain no-repeat !important
 }
 
 #app .fuel__container:before {
@@ -907,7 +908,7 @@ body .window-table__item.selected:hover {
     background: #ffffff !important
 }
 
-.OLD-RADMIR-green-zone__main {
+.OLD-RADMIR-green-zone__main 
     position: absolute;
     left: 1.5vh;
     bottom: 1vh;
@@ -930,7 +931,7 @@ body .window-table__item.selected:hover {
     text-transform: uppercase;
 }
 
-.OLD-RADMIR-green-zone__text div:last-child {
+.OLD-RADMIR-green-zone__text div:last-child 
     color: hsla(0, 0%, 100%, 0);
     font-size: 1.11vh;
     font-weight: 500;
