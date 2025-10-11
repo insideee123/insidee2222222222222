@@ -35,8 +35,8 @@ background-size: auto 100vh;
 
 /*---------- Размер логотипа сервера ----------*/
 .old-logo img {
-    width: 22.52vh;
-    height: 10.2vh;
+    width: 24.52vh;
+    height: 12.2vh;
     margin-right: 2vh;
 }
 
@@ -1581,8 +1581,8 @@ body #app .hud-radmir-speedometer-secondary__data-text {
        margin-bottom:3vh
       }
       .Old-Fixed-Logo img{
-       width:19.52vh;
-       height:6.2vh;
+       width:22.52vh;
+       height:10.2vh;
        margin-right:2vh
       }
       .Old-Fixed-Bonus{
@@ -1779,7 +1779,7 @@ body #app .hud-radmir-speedometer-secondary__data-text {
         right: 0px;
         top: 1012px;
       }
-      .Old-Fixed-ZZ
+      .Old-Fixed-ZZ{
        position:absolute;
        left: 44.02vh;
        bottom: 5.3vh
