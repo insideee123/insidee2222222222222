@@ -1710,11 +1710,11 @@ body .capture-table__timer {
        margin-left: 3px
       }
       .Old-Fixed-Param.health .Old-Progress__Values{
-       background-color:#cf3e3e;
+       background-color: #ffffffff;
        box-shadow: #ffffffff 0 0 .46vh 0
       }
       .Old-Fixed-Param.armour .Old-Progress__Values{
-       background-color:#3679ff;
+       background-color:#ffffffff;
        box-shadow: #ffffffff 0 0 .46vh 0
       }
       .Old-Fixed-Param.hunger .Old-Progress__Values{
