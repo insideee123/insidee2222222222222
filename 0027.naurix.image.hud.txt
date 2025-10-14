@@ -1769,12 +1769,12 @@ body .capture-table__timer {
         right: 0px;
         top: 1012px;
       }
-      .Old-Fixed-ZZ{
+      .Old-Fixed-ZZ
        position:absolute;
        left: 44.02vh;
        bottom: 5.3vh
       }
-      .Old-Fixed-ZZ_icon{
+      .Old-Fixed-ZZ_icon
        width:5.5vh;
        height:5.5vh
       }
