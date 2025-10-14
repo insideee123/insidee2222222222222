@@ -1840,8 +1840,8 @@ ${bayokNewHudConfig.style.authorization}
 }
 
 .old-weapon {
-    width: 16.6vh;
-    height: 16.6vh;
+    width: 18.6vh;
+    height: 18.6vh;
     position: relative;
     display: flex;
     justify-content: flex-end;
