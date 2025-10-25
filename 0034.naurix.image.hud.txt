@@ -1516,8 +1516,8 @@ body #app .hud-radmir-speedometer-secondary__data-text {
       }
       .Old-Fixed-Bonus{
        background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #c2c2c2ff 0, rgba(141, 141, 141, 1) 100%), linear-gradient(129.39deg, #6d6d6dff 100%, #c2c2c2ff 100%);
-       width: 1.96vh;
-       height: 1.96vh;
+       width: 2.56vh;
+       height: 2.56vh;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -1527,7 +1527,7 @@ body #app .hud-radmir-speedometer-secondary__data-text {
        position: absolute;
        bottom: -5px;
        right: -2px;
-       border-radius: 90%;
+       border-radius: 40%;
        font-family:'GothamPro Black';
        font-weight: 900;
        font-size: 1.3vh
