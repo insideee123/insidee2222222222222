@@ -1515,22 +1515,19 @@ body #app .hud-radmir-speedometer-secondary__data-text {
        margin-right:2vh
       }
       .Old-Fixed-Bonus{
-       background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #c2c2c2ff 0, rgba(141, 141, 141, 1) 100%), linear-gradient(129.39deg, #6d6d6dff 100%, #c2c2c2ff 100%);
+       position: absolute;
+       right: 1.2vw;
+       top: 4vh;
        width: 2.96vh;
        height: 2.96vh;
+       border-radius: 10vh;
+       background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #c2c2c2ff 0, rgba(141, 141, 141, 1) 100%), linear-gradient(129.39deg, #6d6d6dff 100%, #c2c2c2ff 100%);
        display: flex;
        align-items: center;
        justify-content: center;
-       font-size: 20px;
-       color: #ffffffff;
-       font-weight: 700;
-       position: absolute;
-       bottom: -5px;
-       right: -2px;
-       border-radius: 50%;
-       font-family:'GothamPro Black';
+       font-family: 'GothamPro Black';
        font-weight: 900;
-       font-size: 1.3vh
+       font-size: 1.3vh;
       }
       .Old-Fixed-Main,.Old-Fixed-Cash,.Wanted_row{
        align-items:center;
