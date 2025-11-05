@@ -518,7 +518,7 @@ body .window-table__item.selected:hover {
 }
 
 #app .container {
-    background: rgb(0 0 0 / 80%)
+    background: rgba(70, 5, 5, 0.8)
 }
 
 #app .vue3-slider .track-filled,
@@ -907,7 +907,7 @@ body .window-table__item.selected:hover {
     background: #ffffff !important
 }
 
-.OLD-RADMIR-green-zone__main {
+.OLD-RADMIR-green-zone__main 
     position: absolute;
     left: 1.5vh;
     bottom: 1vh;
@@ -915,22 +915,22 @@ body .window-table__item.selected:hover {
     align-items: center;
 }
 
-.OLD-RADMIR-green-zone__image {
+.OLD-RADMIR-green-zone__image 
     margin-right: .93vh;
 }
 
-.OLD-RADMIR-green-zone__text {
+.OLD-RADMIR-green-zone__text 
     color: #ffffff00;
     text-shadow: .28vh .28vh .46vh #00000000;
 }
 
-.OLD-RADMIR-green-zone__text div:first-child {
+.OLD-RADMIR-green-zone__text div:first-child 
     font-size: 1.2vh;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-.OLD-RADMIR-green-zone__text div:last-child {
+.OLD-RADMIR-green-zone__text div:last-child 
     color: hsla(0, 0%, 100%, 0);
     font-size: 1.11vh;
     font-weight: 500;
@@ -1673,6 +1673,15 @@ body #app .hud-radmir-speedometer-secondary__data-text {
         right: 0;
         top: 20px;
       }
+      .Old-Fixed-ZZ{
+       position:absolute;
+       left:21.3vh;
+       bottom:21.3vh
+      }
+      .Old-Fixed-ZZ_icon{
+       width:4.5vh;
+       height:4.5vh
+      }
       .Old-Fixed-Freeze {
         position: absolute;
         background: hsl(190deg 63% 66% / 40%);
@@ -1916,6 +1925,35 @@ ${bayokNewHudConfig.style.authorization}
     background: #ffffffff !important
 }
 
+.OLD-RADMIR-green-zone__main {
+    position: absolute;
+    left: 10.6vh;
+    bottom: -76vh;
+    display: flex;
+    align-items: center;
+}
+
+.OLD-RADMIR-green-zone__image {
+    margin-right: 10px;
+}
+
+.OLD-RADMIR-green-zone__text {
+    color: #ffffffff;
+    text-shadow: 3px 3px 5px #00000080
+}
+
+.OLD-RADMIR-green-zone__text div:first-child {
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.OLD-RADMIR-green-zone__text div:last-child {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
 
 /* Additional styles from the request */
 #app .fuel__button .text:before { background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMS40NTEgMUw0LjQ4NCA3Ljg0OEwxIDQuNDI0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPg0KPC9zdmc+DQo=) center/contain no-repeat !important } 
@@ -1933,7 +1971,7 @@ ${bayokNewHudConfig.style.authorization}
 #app .fuel__button { background: linear-gradient(185.93deg, #fff -22.13%, #e6e6e6 122.51%) !important; color: #000000ff !important } 
 #app .fuel__button:hover { box-shadow: 0 6px 20px #ffffff40 !important } 
 
-/* ---------- НИЧЕГО НЕ ТРОГАТЬ ИТАК ВСЕ РАБОТАЕТ ----------*/ 
+/* ---------- не трогай, итак же все работает))) ----------*/ 
 
 body .authorization{background:0 0}#app .authorization{background-image:url();background-size:auto 100vh}
       `;
@@ -1992,6 +2030,7 @@ body .authorization{background:0 0}#app .authorization{background-image:url();ba
         </div>
       </div>
       <div class="Old-Fixed-HudBottom">
+      <div class="Old-Fixed-ZZ"><img src="${bayokNewHudConfig.icons.zone}" class="Old-Fixed-ZZ_icon"></div>
       <div class="Old-Fixed-Freeze">
       <span class="Old-Fixed-Freeze_text">Freeze:</span>
       <span class="Old-Fixed-Freeze_value">100</span>
@@ -2104,7 +2143,12 @@ body .authorization{background:0 0}#app .authorization{background-image:url();ba
                 freezeValueEl.textContent = formattedValue;
             }
         },
-       
+        greenZone: (isVisible) => {
+            const greenZoneEl = document.querySelector(".Old-Fixed-ZZ");
+            if (greenZoneEl) {
+                greenZoneEl.style.display = isVisible ? "" : "none";
+            }
+        },
     };
     function onInfoChange(type, value) {
         setTimeout(() => {
