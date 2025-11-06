@@ -80,203 +80,58 @@ body .info-card .text {
 
 /* ------- Окна ------- */
 #app .modal-container-wrapper {
-    background: rgba(75, 0, 0, 0.8) !important;
-    border: 0.19vh solid #ffffff0d;
-    border-radius: 2.5vh !important;
+  border: 0;
+  background: #000000;
+  background-size: 100%;
+  box-shadow: none;
+  transform: scale(.8);
+  border-radius: 2vh;
 }
 
-#app .modal_violet .modal-container {
-    border-top: none !important;
+#app .modal-container {
+  border: none;
+  background: 0 0;
 }
 
-#app .modal-light__light {
-    background: none !important;
+#app .modal__pattern-wrapper,
+#app .inventory-main__after,
+#app .inventory-main__before {
+  display: none;
 }
 
-#app .modal-light__light_second {
-    background: none !important;
+#app .modal__title {
+  font-family: "Open Sans", var(--fallback-font);
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 2vh;
+  border-bottom: 1px solid #575757ff;
+  padding-bottom: 1.5vh;
+}
+#app .window-table__item {
+  height: 4.3vh;
+  color: #fff;
+  border-radius: 2vh;
+  border: none;
+  background: rgba(0, 0, 0, 0.582);
+  box-shadow: none;
+  transition: .25s;
 }
 
-#app .modal-light__light {
-    background: none !important;
+#app .input-field_hoverable:hover,
+#app .window-table__item:hover {
+  background: #ffffffff;
 }
 
-#app .modal-light__light_second {
-    background: none !important;
+#app .window-table__item.selected {
+  background: #fff;
+  color: #000000ff;
+  transition: .25s;
 }
 
-#app .modal-overlay {
-    background: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_blue .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_blue .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_orange .modal-container {
-    border-top: none !important;
-}
-
-#app .modal_orange .modal-container-wrapper {
-    box-shadow: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_orange .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_orange .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_violet .modal-container-wrapper {
-    box-shadow: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_violet .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_violet .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_green .modal-container {
-    border-top: none !important;
-}
-
-#app .modal_green .modal-container-wrapper {
-    box-shadow: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_green .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_green .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_red .modal-container {
-    border-top: none !important;
-}
-
-#app .modal_red .modal-container-wrapper {
-    box-shadow: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_red .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_red .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_dark-orange .modal-container {
-    border-top: none !important;
-}
-
-#app .modal_dark-orange .modal-container-wrapper {
-    box-shadow: none !important;
-}
-
-@media (platform:mobile) {
-    #app .modal_dark-orange .modal-container-wrapper {
-        box-shadow: none !important;
-    }
-
-    #app .modal_dark-orange .modal-container {
-        border-width: 0.3704vh
-    }
-}
-
-#app .modal_overlay-violet-blue .modal-overlay {
-    background: none !important;
-}
-
-body .window-bg {
-    background-image: none;
-}
-
-body .window__before {
-    background-image: none;
-}
-
-body .window__title {
-    text-align: center;
-    color: #ffffff;
-}
-
-body .window-table__item {
-    color: #fff;
-    border-radius: 2vh;
-    border: .09vh solid #ffffff00;
-    transition: .25s
-}
-
-body .window-table__item:before {
-    border-radius: 3vh;
-    background: linear-gradient(rgba(59, 59, 59, 0.161), rgba(59, 59, 59, 0.161))
-}
-
-body .window-table__item:after {
-    background: rgba(59, 59, 59, 0.161);
-    border-radius: 3vh;
-}
-
-body .window-table__item.selected {
-    background: #ffffff;
-    color: #000000cd;
-    border: .09vh solid #f4f1e100
-}
-
-body .window-button {
-    border-radius: 2vh;
-    color: #ffffff;
-    background: rgba(59, 59, 59, 0.161);
-}
-
-body .window-table__item:hover {
-    background: #ffffff50;
-    border-color: none
-}
-
-body .window-table__item.selected:hover {
-    background: #ffffff;
-    color: #000000cd;
-    border: 0.09vh solid #f4f1e100;
-}
-
-#app .window-button:hover {
-    color: #000000cd;
-    background: #fff
-}
-
-#app .window-button:first-child:hover {
-    background: #fff !important;
-}
-
-#app .window-button:first-child {
-    background: #fff !important;
-}
-
-.graffiti-pattern__image[data-v-38ff9a6b] {
-    background: none !important;
+#app .window-table__col {
+  font-size: 1.55vh;
 }
 
 /* ------- Чат ------- */
