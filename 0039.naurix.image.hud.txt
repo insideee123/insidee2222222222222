@@ -475,7 +475,75 @@ body .info-card .text {
 #app .death-timer {
     font-style: italic
 }
+/* ----------Табло капта---------- */
+#app .capture-table {
+  background: #5a5a5a5b;
+  box-shadow: 0 0 5vh 0 #5a5a5a5b;
+  border-radius: 1vh;
+  transform: scale(.9);
+  padding: 1.5vh 1.8vh;
+}
 
+#app .capture-table__col-kills,
+#app .capture-table__col-kills.my,
+#app .capture-table__timer {
+  background: #5a5a5a5b;
+  color: #fff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8vh;
+  font-family: 'GothamPro Bold';
+  border-radius: .5vh;
+}
+
+#app .capture-table {
+    background: #5a5a5a5b;
+    box-shadow: 0 0 5vh 0 #5a5a5a5b;
+    border-radius: 1vh;
+    transform: scale(.9);
+    padding: 1.5vh 1.8vh;
+}
+
+#app .capture-table__col-kills,
+#app .capture-table__col-kills.my,
+#app .capture-table__timer {
+    background: #5a5a5a5b;
+    color: #fff;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.8vh;
+    font-family: 'GothamPro Bold';
+    border-radius: .5vh;
+}
+
+#app .capture-table__timer {
+    width: 7.5vh;
+    height: 3.7vh;
+}
+
+#app .capture-table__col-kills {
+    margin: 0;
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+#app .capture-table__col .name {
+    font-family: 'GothamPro Bold';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+}
+
+#app .capture-table__col-kills.my {
+    margin-right: 1.3vh;
+    margin-left: 0 !important;
+    background: none;
+}
+
+#app .capture-table__col-kills {
+    margin-left: 1.3vh;
+    background: none;
+}
 /* ------------ НЕ НУЖНО ТРОГАТЬ ------------ */
 .old-freeze__value {
     font-family: \"GothamPro Black\";
