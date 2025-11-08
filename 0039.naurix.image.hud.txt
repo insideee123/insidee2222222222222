@@ -81,7 +81,7 @@ body .info-card .text {
 /* ------- Окна ------- */
 #app .modal-container-wrapper {
   border: 0;
-  background-image: url(inside/00000.png);;
+  background-image: url(inside/00000.png);
   background-size: 100%;
   box-shadow: none;
   transform: scale(.8);
