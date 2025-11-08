@@ -316,7 +316,7 @@ body .info-card .text {
 /* ------- Радиальное меню ------- */
 /* -bg-f03f4313.png- */
 #app .player-interaction__container:before {
-    background: #979797 center/cover no-repeat
+    background-image: url ()center/cover no-repeat
 }
 
 /* -radial-d813e184.svg- */
@@ -365,7 +365,7 @@ body .info-card .text {
 }
 
 #app .player-interaction-favorite {
-    background: rgba(151, 151, 151)
+    background: rgba(151, 151, 151, 0.521)
 }
 
 #app .player-interaction-favorite:hover {
