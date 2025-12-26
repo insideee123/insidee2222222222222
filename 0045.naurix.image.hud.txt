@@ -1681,7 +1681,7 @@ body #app .hud-radmir-speedometer-secondary__data-text {
         left: 11.1620vh;
         bottom: 2.7778vh;
       }
-      #app .hud-radmir-radar__map { border-radius: 100%; border: 1.45vh solid #000000ff !important } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 16vh !important; height: 16vh !important }
+      #app .hud-radmir-radar__map { border-radius: 100%; border: 1.45vh solid #000000ff !important } body #app .hud-radmir-radar__map { transition: .3s } #app .hud-hassle-map { width: 20vh !important; height: 20vh !important }
       body .OLD-RADMIR-logo__bonus {
     background: #000000c5
 }
