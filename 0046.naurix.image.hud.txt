@@ -95,15 +95,6 @@ function AddHud() {
         style: {
             "authorization": "
 
-
-
-
-
-
-
-
-
-/---------- ДОП СТИЛИ ----------/ \"} // I LOVE AURIX,а мадагаскар педик"
         }
     };
 
