@@ -252,14 +252,14 @@ const oldRadmirConfig = {
       }
       /* ------- РАЗМЕР ЛОГА, 20.52/6.2 ДЕФОЛТНОЕ ------- */
       .Old-Fixed-Logo img{
-       width:20.52vh;
-       height:6.2vh;
+       width:21.52vh;
+       height:7.2vh;
        margin-right:2vh
       }
 
       /* ------- ЦВЕТ Х3-Х2 ------- */
       .Old-Fixed-Bonus{
-       background: #000000;
+       background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
        width: 32px;
        height: 32px;
        display: flex;
@@ -303,13 +303,13 @@ const oldRadmirConfig = {
        z-index:-1
       }
       .Old-Fixed-Weapon_icon{
-       width:38vh;
-       height:17.6vh
+       width:37vh;
+       height:16.6vh
       }
       .Old-Fixed-Weapon_ammo{
        position:absolute;
-       bottom:2.6vh;
-       right:4vh;
+       bottom:5.6vh;
+       right:3vh;
        display:flex;
        align-items:flex-end;
        color: #fff;
@@ -402,22 +402,22 @@ const oldRadmirConfig = {
      /* ------- ЦВЕТ БАРОВ(ХП,ЕДА,БРОНИК) ------- */
 
       .Old-Fixed-Param.health .Old-Progress__Values{
-       background-color: #ffffffff;
-       box-shadow: #ffffff00 0 0 .46vh 0
+       background-color: #ed2e2e;
+       box-shadow: #ed2e2e00 0 0 .46vh 0
       }
       .Old-Fixed-Param.armour .Old-Progress__Values{
-       background-color: #ffffffff;
-       box-shadow: #ffffff00 0 0 .46vh 0
+       background-color: #526ee6;
+       box-shadow: #526de600 0 0 .46vh 0
       }
       .Old-Fixed-Param.hunger .Old-Progress__Values{
        width: 50%;
-       box-shadow: #ffffff00;
-       background-color: #ffffff
+       box-shadow: #00000000;
+       background-color: #ff872e
       }
       .Old-Fixed-Param.breath .Old-Progress__Values{
         width: 99%;
-        background-color: #ffffff;
-        box-shadow: #ffffff00 0 0 5px 0
+        background-color: #fff;
+        box-shadow: rgba(255, 255, 255, 0) 0 0 5px 0
       }
       .Old-Fixed-Param.health .old-param__icon{
        margin-left: 20px
@@ -444,7 +444,7 @@ const oldRadmirConfig = {
        z-index:-1
       }
       .Wanted_row img{
-       width: 1.35vw;
+       width: 1.45vw;
        height: 2vh;
        padding:.19vh .28vh
       }
@@ -454,7 +454,7 @@ const oldRadmirConfig = {
         right: 0;
         top: 20px;
       }
-      .Old-Fixed-ZZ{
+      .Old-Fixed-ZZ
        position:absolute;
        left:21.3vh;
        bottom:-98.9vh
