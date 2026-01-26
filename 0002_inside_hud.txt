@@ -261,7 +261,7 @@ const oldRadmirConfig = {
       .Old-Fixed-Bonus{
        position: absolute;
        right: 4vh;
-       top: 2vh;
+       top: 3vh;
        width: 2.96vh;
        height: 2.96vh;
        border-radius: 10vh;
@@ -269,7 +269,7 @@ const oldRadmirConfig = {
        display: flex;
        align-items: center;
        justify-content: center;
-       font-family: 'GothamPro Pro Medium';
+       font-family: 'GothamPro Black';
        font-weight: 900;
        font-size: 1.3vh;
       }
