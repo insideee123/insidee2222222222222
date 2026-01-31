@@ -1304,16 +1304,20 @@ function ensureZZStyles() {
     style.innerHTML = `
         .Old-Fixed-ZZ {
             position: fixed !important;
-            left: 2.5vh !important;
-            bottom: 2.5vh !important;
-            z-index: 9999 !important;
+            left: 2vh !important;
+            bottom: 2vh !important;
 
-            display: flex;
+            transform: none !important;
+            inset: auto !important;
+
+            z-index: 2147483647 !important;
+            pointer-events: none;
+
+            display: flex !important;
             align-items: center;
             gap: 1.2vh;
 
             background: rgba(0, 0, 0, 0.55);
-            backdrop-filter: blur(6px);
             padding: 1.2vh 1.6vh;
             border-radius: 1.2vh;
         }
@@ -1321,16 +1325,15 @@ function ensureZZStyles() {
         .Old-Fixed-ZZ_icon {
             width: 4.5vh !important;
             height: 4.5vh !important;
-            flex-shrink: 0;
+            transform: none !important;
         }
 
         .Old-Fixed-ZZ_text {
             display: flex;
             flex-direction: column;
-            color: #ffffff;
+            color: #fff;
             font-family: 'GothamPro Medium';
             line-height: 1.15;
-            text-shadow: 0 0 .6vh rgba(0,0,0,.8);
         }
 
         .Old-Fixed-ZZ_text .title {
@@ -1340,12 +1343,12 @@ function ensureZZStyles() {
         }
 
         .Old-Fixed-ZZ_text .desc {
-            font-family: 'GothamPro Light';
             font-size: 1.2vh;
-            opacity: 0.85;
+            opacity: .85;
         }
     `;
 }
+
     }
     function initializeHudProxy() {
         const checkInterval = setInterval(() => {
