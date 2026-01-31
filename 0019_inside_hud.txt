@@ -1351,28 +1351,17 @@ AddHud()
 
 
 
- (function waitForAuthorization() {
-    const observer = new MutationObserver(() => {
-        const auth = document.querySelector('.authorization');
+(function waitForGame() {
+    const interval = setInterval(() => {
+        const hud = document.querySelector('.hud-radmir-info');
 
-        if (!auth) return;
+        if (hud && hud.offsetParent !== null) {
+            clearInterval(interval);
 
-        const style = getComputedStyle(auth);
-        const isVisible =
-            style.display !== 'none' &&
-            style.visibility !== 'hidden' &&
-            style.opacity !== '0';
-
-        if (isVisible) {
-            observer.disconnect();
-            AddHud();
+            setTimeout(() => {
+                sendChatCommand('/hudscalefix');
+            }, 1000);
         }
-    });
-
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        attributeFilter: ['style', 'class']
-    });
+    }, 300);
 })();
+
