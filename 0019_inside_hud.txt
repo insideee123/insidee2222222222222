@@ -1292,11 +1292,14 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                 icon.classList.add("wanted-innactive");
             }
         });
-(function initGreenZoneZZ() {
-    let zzInitialized = false;
+// ==================================================
+// ZZ ICON — ONLY ICON, NO ZONE LOGIC, NO EVENTS
+// ==================================================
 
-    function createZZ() {
-        if (document.querySelector('.Old-Fixed-ZZ')) return;
+(function () {
+
+    function ensureZZIcon() {
+        let zz = document.querySelector('.Old-Fixed-ZZ');
 
         const radar =
             document.querySelector('.old-radar') ||
@@ -1304,19 +1307,18 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
 
         if (!radar) return;
 
-        const zz = document.createElement('div');
-        zz.className = 'Old-Fixed-ZZ';
-        zz.style.display = 'none';
+        // если элемента нет — создаём
+        if (!zz) {
+            zz = document.createElement('div');
+            zz.className = 'Old-Fixed-ZZ';
 
-        zz.innerHTML = `
-            <img class="Old-Fixed-ZZ_icon" src="${oldRadmirConfig?.icons?.zone || ''}">
-            <div class="Old-Fixed-ZZ_text">
-                <div class="title">БЕЗОПАСНАЯ ЗОНА</div>
-                <div class="desc">Вы находитесь в безопасной зоне.</div>
-            </div>
-        `;
+            zz.innerHTML = `
+                <img class="Old-Fixed-ZZ_icon"
+                     src="${oldRadmirConfig?.icons?.zone || ''}">
+            `;
 
-        radar.appendChild(zz);
+            radar.appendChild(zz);
+        }
     }
 
     function ensureZZStyles() {
@@ -1333,70 +1335,25 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                 position: absolute !important;
                 left: 0 !important;
                 bottom: 0 !important;
-                display: flex;
-                align-items: center;
-                gap: 1.2vh;
-                padding: 1.2vh 1.6vh;
-                background: rgba(0, 0, 0, 0.55);
-                border-radius: 1.2vh;
-                z-index: 10;
+                z-index: 5;
+                pointer-events: none;
             }
 
             .Old-Fixed-ZZ_icon {
                 width: 4.5vh;
                 height: 4.5vh;
-                flex-shrink: 0;
-            }
-
-            .Old-Fixed-ZZ_text {
-                display: flex;
-                flex-direction: column;
-                color: #fff;
-                font-family: 'GothamPro Medium';
-                line-height: 1.15;
-            }
-
-            .Old-Fixed-ZZ_text .title {
-                font-family: 'GothamPro Bold';
-                font-size: 1.4vh;
-                text-transform: uppercase;
-            }
-
-            .Old-Fixed-ZZ_text .desc {
-                font-size: 1.2vh;
-                opacity: 0.85;
             }
         `;
     }
 
-    function showZZ() {
-        const zz = document.querySelector('.Old-Fixed-ZZ');
-        if (zz) zz.style.display = '';
-    }
-
-    function hideZZ() {
-        const zz = document.querySelector('.Old-Fixed-ZZ');
-        if (zz) zz.style.display = 'none';
-    }
-
-    // 🔁 self-healing (как в mods.js по стабильности)
+    // self-healing, НИЧЕГО ДРУГОГО НЕ ТРОГАЕТ
     setInterval(() => {
-        createZZ();
+        ensureZZIcon();
         ensureZZStyles();
     }, 500);
 
-    // 🔗 перехват событий Radmir (АНАЛОГ mods.js)
-    const originalOnInfoChange = window.onInfoChange;
-
-    window.onInfoChange = function (e, a) {
-        if (e === 'showGreenZoneTab') showZZ();
-        if (e === 'hideGreenZoneTab') hideZZ();
-
-        if (typeof originalOnInfoChange === 'function') {
-            originalOnInfoChange(e, a);
-        }
-    };
 })();
+
 
     }
     function initializeHudProxy() {
@@ -1446,11 +1403,14 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
   };
 AddHud()
 
-(function initGreenZoneZZ() {
-    let zzInitialized = false;
+// ==================================================
+// ZZ ICON — ONLY ICON, NO ZONE LOGIC, NO EVENTS
+// ==================================================
 
-    function createZZ() {
-        if (document.querySelector('.Old-Fixed-ZZ')) return;
+(function () {
+
+    function ensureZZIcon() {
+        let zz = document.querySelector('.Old-Fixed-ZZ');
 
         const radar =
             document.querySelector('.old-radar') ||
@@ -1458,19 +1418,18 @@ AddHud()
 
         if (!radar) return;
 
-        const zz = document.createElement('div');
-        zz.className = 'Old-Fixed-ZZ';
-        zz.style.display = 'none';
+        // если элемента нет — создаём
+        if (!zz) {
+            zz = document.createElement('div');
+            zz.className = 'Old-Fixed-ZZ';
 
-        zz.innerHTML = `
-            <img class="Old-Fixed-ZZ_icon" src="${oldRadmirConfig?.icons?.zone || ''}">
-            <div class="Old-Fixed-ZZ_text">
-                <div class="title">БЕЗОПАСНАЯ ЗОНА</div>
-                <div class="desc">Вы находитесь в безопасной зоне.</div>
-            </div>
-        `;
+            zz.innerHTML = `
+                <img class="Old-Fixed-ZZ_icon"
+                     src="${oldRadmirConfig?.icons?.zone || ''}">
+            `;
 
-        radar.appendChild(zz);
+            radar.appendChild(zz);
+        }
     }
 
     function ensureZZStyles() {
@@ -1487,69 +1446,21 @@ AddHud()
                 position: absolute !important;
                 left: 0 !important;
                 bottom: 0 !important;
-                display: flex;
-                align-items: center;
-                gap: 1.2vh;
-                padding: 1.2vh 1.6vh;
-                background: rgba(0, 0, 0, 0.55);
-                border-radius: 1.2vh;
-                z-index: 10;
+                z-index: 5;
+                pointer-events: none;
             }
 
             .Old-Fixed-ZZ_icon {
                 width: 4.5vh;
                 height: 4.5vh;
-                flex-shrink: 0;
-            }
-
-            .Old-Fixed-ZZ_text {
-                display: flex;
-                flex-direction: column;
-                color: #fff;
-                font-family: 'GothamPro Medium';
-                line-height: 1.15;
-            }
-
-            .Old-Fixed-ZZ_text .title {
-                font-family: 'GothamPro Bold';
-                font-size: 1.4vh;
-                text-transform: uppercase;
-            }
-
-            .Old-Fixed-ZZ_text .desc {
-                font-size: 1.2vh;
-                opacity: 0.85;
             }
         `;
     }
 
-    function showZZ() {
-        const zz = document.querySelector('.Old-Fixed-ZZ');
-        if (zz) zz.style.display = '';
-    }
-
-    function hideZZ() {
-        const zz = document.querySelector('.Old-Fixed-ZZ');
-        if (zz) zz.style.display = 'none';
-    }
-
-    // 🔁 self-healing (как в mods.js по стабильности)
+    // self-healing, НИЧЕГО ДРУГОГО НЕ ТРОГАЕТ
     setInterval(() => {
-        createZZ();
+        ensureZZIcon();
         ensureZZStyles();
     }, 500);
 
-    // 🔗 перехват событий Radmir (АНАЛОГ mods.js)
-    const originalOnInfoChange = window.onInfoChange;
-
-    window.onInfoChange = function (e, a) {
-        if (e === 'showGreenZoneTab') showZZ();
-        if (e === 'hideGreenZoneTab') hideZZ();
-
-        if (typeof originalOnInfoChange === 'function') {
-            originalOnInfoChange(e, a);
-        }
-    };
 })();
-
-
