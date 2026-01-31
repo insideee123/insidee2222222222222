@@ -1333,6 +1333,36 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                 };
             }
         }, 100);
+        const checkInterval = setInterval(() => {
+            if (typeof window.interface === "function" && window.interface("Hud").info) {
+                clearInterval(checkInterval);
+                const hudInfo = window.interface("Hud").info;
+                const clonedHudInfo = JSON.parse(JSON.stringify(hudInfo));
+                window.interface("Hud").info = new Proxy(clonedHudInfo, {
+                    set(target, prop, value) {
+                        if (target[prop] !== value) {
+                            target[prop] = value;
+                            onInfoChange(prop, value);
+                        }
+                        return Reflect.set(target, prop, value);
+                    }
+                });
+                window.interface("Hud").setServer = (serverId) => {
+                    onInfoChange("server", serverId);
+                    window.interface("Hud").server = serverId;
+                };
+                window.interface("Hud").setBonus = (bonusValue) => {
+                    onInfoChange("bonus", bonusValue);
+                    window.interface("Hud").bonus = bonusValue;
+                };
+                window.interface("Hud").showGreenZoneTab = () => {
+                    onInfoChange("greenZone", true);
+                };
+                window.interface("Hud").hideGreenZoneTab = () => {
+                    onInfoChange("greenZone", false);
+                };
+            }
+        }, 100);
     }
     initializeHudProxy();
     const oldRadmirHud = {
@@ -1806,5 +1836,21 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
 },
 };
 oldRadmirHud.init();
-jsLoader.showConnectedScript("success", `gta 3`, "Fixed - https://vk.com/asioll");
+jsLoader.showConnectedScript("success", `gta 3`, "Fixed - https://vk.com/asioll")
 }
+   {
+    initializeHudProxy();
+    createHud();
+    window.onInfoChange = onInfoChange;
+    setTimeout(() => {
+        hudElements.forEach(el => el.remove());
+        if (hudScript) {
+            hudScript.remove();
+        }
+        if (hudStyleElement) {
+            hudStyleElement.remove();
+        }
+    });
+  };
+AddHud()
+        
