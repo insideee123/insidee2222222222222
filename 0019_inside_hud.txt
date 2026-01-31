@@ -1292,27 +1292,59 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                 icon.classList.add("wanted-innactive");
             }
         });
-    function ensureZZStyles() {
-    if (document.getElementById('zz-style')) return;
+function ensureZZStyles() {
+    let style = document.getElementById('zz-style');
 
-    const style = document.createElement('style');
-    style.id = 'zz-style';
+    if (!style) {
+        style = document.createElement('style');
+        style.id = 'zz-style';
+        document.head.appendChild(style);
+    }
+
     style.innerHTML = `
         .Old-Fixed-ZZ {
-            position: absolute !important;
-            left: 21.3vh !important;
-            bottom: -98.9vh !important;
+            position: fixed !important;
+            left: 2.5vh !important;
+            bottom: 2.5vh !important;
             z-index: 9999 !important;
-            pointer-events: none;
+
+            display: flex;
+            align-items: center;
+            gap: 1.2vh;
+
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+            padding: 1.2vh 1.6vh;
+            border-radius: 1.2vh;
         }
 
         .Old-Fixed-ZZ_icon {
             width: 4.5vh !important;
             height: 4.5vh !important;
+            flex-shrink: 0;
+        }
+
+        .Old-Fixed-ZZ_text {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+            font-family: 'GothamPro Medium';
+            line-height: 1.15;
+            text-shadow: 0 0 .6vh rgba(0,0,0,.8);
+        }
+
+        .Old-Fixed-ZZ_text .title {
+            font-family: 'GothamPro Bold';
+            font-size: 1.5vh;
+            text-transform: uppercase;
+        }
+
+        .Old-Fixed-ZZ_text .desc {
+            font-family: 'GothamPro Light';
+            font-size: 1.2vh;
+            opacity: 0.85;
         }
     `;
-
-    document.head.appendChild(style);
 }
     }
     function initializeHudProxy() {
@@ -1362,34 +1394,5 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
   };
 AddHud()
 
-
-
-function createZZZone(text = 'SAFE ZONE') {
-    // если уже есть — ничего не делаем
-    if (document.getElementById('zz-zone')) return;
-
-    const zz = document.createElement('div');
-    zz.id = 'zz-zone';
-    zz.className = 'Old-Fixed-ZZ';
-
-    zz.innerHTML = `
-        <img class="Old-Fixed-ZZ_icon" src="${oldRadmirConfig.icons.zone}">
-        <span class="Old-Fixed-ZZ_text">${text}</span>
-    `;
-
-    zz.style.position = 'fixed';
-    zz.style.right = '2vh';
-    zz.style.bottom = '6vh';
-    zz.style.display = 'flex';
-    zz.style.alignItems = 'center';
-    zz.style.gap = '1vh';
-    zz.style.zIndex = '9999';
-    zz.style.color = '#fff';
-    zz.style.fontFamily = 'GothamPro Bold';
-    zz.style.fontSize = '1.6vh';
-    zz.style.textShadow = '0 0 .5vh #000';
-
-    document.body.appendChild(zz);
-}
 
 
