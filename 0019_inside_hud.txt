@@ -1301,6 +1301,33 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                 icon.classList.add("wanted-innactive");
             }
         });
+        function createZZZone(text = 'SAFE ZONE') {
+    // если уже есть — ничего не делаем
+    if (document.getElementById('zz-zone')) return;
+
+    const zz = document.createElement('div');
+    zz.id = 'zz-zone';
+    zz.className = 'Old-Fixed-ZZ';
+
+    zz.innerHTML = `
+        <img class="Old-Fixed-ZZ_icon" src="${oldRadmirConfig.icons.zone}">
+        <span class="Old-Fixed-ZZ_text">${text}</span>
+    `;
+
+    zz.style.position = 'fixed';
+    zz.style.right = '2vh';
+    zz.style.bottom = '6vh';
+    zz.style.display = 'flex';
+    zz.style.alignItems = 'center';
+    zz.style.gap = '1vh';
+    zz.style.zIndex = '9999';
+    zz.style.color = '#fff';
+    zz.style.fontFamily = 'GothamPro Bold';
+    zz.style.fontSize = '1.6vh';
+    zz.style.textShadow = '0 0 .5vh #000';
+
+    document.body.appendChild(zz);
+}
     }
     function initializeHudProxy() {
         const checkInterval = setInterval(() => {
@@ -1351,17 +1378,32 @@ AddHud()
 
 
 
-(function waitForGame() {
-    const interval = setInterval(() => {
-        const hud = document.querySelector('.hud-radmir-info');
+function createZZZone(text = 'SAFE ZONE') {
+    // если уже есть — ничего не делаем
+    if (document.getElementById('zz-zone')) return;
 
-        if (hud && hud.offsetParent !== null) {
-            clearInterval(interval);
+    const zz = document.createElement('div');
+    zz.id = 'zz-zone';
+    zz.className = 'Old-Fixed-ZZ';
 
-            setTimeout(() => {
-                sendChatCommand('/hudscalefix');
-            }, 1000);
-        }
-    }, 300);
-})();
+    zz.innerHTML = `
+        <img class="Old-Fixed-ZZ_icon" src="${oldRadmirConfig.icons.zone}">
+        <span class="Old-Fixed-ZZ_text">${text}</span>
+    `;
+
+    zz.style.position = 'fixed';
+    zz.style.right = '2vh';
+    zz.style.bottom = '6vh';
+    zz.style.display = 'flex';
+    zz.style.alignItems = 'center';
+    zz.style.gap = '1vh';
+    zz.style.zIndex = '9999';
+    zz.style.color = '#fff';
+    zz.style.fontFamily = 'GothamPro Bold';
+    zz.style.fontSize = '1.6vh';
+    zz.style.textShadow = '0 0 .5vh #000';
+
+    document.body.appendChild(zz);
+}
+
 
