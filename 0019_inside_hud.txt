@@ -355,14 +355,14 @@ const oldRadmirConfig = {
         margin-top:0;
         margin-left:1.85vh
       }
-      .Old-Fixed-Param.armour,.Old-Param-Values{
-        margin-left: 2vh
+      .Old-Fixed-Param.armour{
+        margin-left: 10vh
       }
       .Old-Param-Progress,.Old-Progress__Values{
        width:9.40vh;
        height:.45vh;
        background-color: #0000004d;
-       border-radius:.45vh
+       border-radius:.47vh
       }
       .Old-Progress__Values{
        display:flex;
@@ -423,7 +423,7 @@ const oldRadmirConfig = {
         box-shadow: #ffffff79 0 0 5px 0
       }
       .Old-Fixed-Param.health .old-param__icon{
-       width: 1.34vh;height: 1.35vh;
+       width: 1.39vh;height: 1.35vh;
       }
       .Old-Fixed-Param.armour .old-param__icon{
        width: 1.34vh;height: 1.35vh;
