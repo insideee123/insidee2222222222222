@@ -327,7 +327,7 @@ const oldRadmirConfig = {
        text-shadow:0 0 .46vh #000000b3
       }
       .Old-Fixed-Params{
-       height:13.5vh;
+       height:15.5vh;
        position:relative;
        z-index:1
       }
