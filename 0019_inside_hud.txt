@@ -1355,7 +1355,8 @@ AddHud();
 
         .gz-title {
         color: #ffffff;
-        font-size: 1.4vh;
+        text-shadow: .28vh .28vh .46vh #000000be;
+        font-size: 1.3vh;
         font-weight: 900;
         text-transform: uppercase;
         }
@@ -1363,7 +1364,7 @@ AddHud();
         .gz-subtitle {
             color: rgb(255, 255, 255);
             text-shadow: .28vh .28vh .46vh #00000080;
-            font-size: 1.31vh;
+            font-size: 1.21vh;
             font-weight: 500;
             margin-top: .50vh;
         }
@@ -1386,8 +1387,8 @@ AddHud();
 
     customZone.style.cssText = `
         position: absolute;
-        left: 1.5vh;
-        bottom: 1.2vh;
+        left: 6.5vh;
+        bottom: 25.2vh;
         display: none;
         align-items: center;
         gap: 0.5vh;
