@@ -255,17 +255,17 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Fixed-Bonus{
        background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
-       width: 33px;
-       height: 33px;
+       width: 32px;
+       height: 32px;
        display: flex;
        align-items: center;
        justify-content: center;
-       font-size: 16px;
+       font-size: 17px;
        color: #fff;
        font-weight: 700;
        position: absolute;
-       bottom: -5px;
-       right: -1px;
+       bottom: 1vh;
+       right: 5vh;
        border-radius: 50%;
        font-family:"GothamPro Black Italic";
        font-style:italic;
@@ -298,7 +298,7 @@ body #app .hud-radmir-info { display: none; }
     z-index: -1;
 }
 .Old-Fixed-Weapon_icon {
-    width: 36vh;
+    width: 36.2vh;
     height: 16.6vh;
 }
 .Old-Fixed-Weapon_ammo {
