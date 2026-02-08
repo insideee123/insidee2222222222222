@@ -1129,7 +1129,7 @@ body .authorization{background:0 0}#app .authorization{background-image:url("dat
                     <div class="Old-Param-Progress">
                        <div class="Old-Progress__Values" style="width:100%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
                     </div>
-                    <span class="Old-Param-Values">100</span>
+                    <span class="Old-Param-Values">50</span>
                  </div>
               </div>
            </div>
