@@ -250,8 +250,8 @@ body #app .hud-radmir-info { display: none; }
     margin-bottom: 3vh;
 }
 .Old-Fixed-Logo img {
-    width: 19.52vh;
-    height: 6.2vh;
+    width: 20.52vh;
+    height: 8.2vh;
     margin-right: 2vh;
 }
 .Old-Fixed-Bonus{
@@ -418,13 +418,13 @@ body #app .hud-radmir-info { display: none; }
     box-shadow: rgba(255, 255, 255, .5) 0 0 5px 0;
 }
       .Old-Fixed-Param.health .old-param__icon{
-       width: 1.44vh;height: 1.44vh;
+       width: 1.39vh;height: 1.35vh;
       }
       .Old-Fixed-Param.armour .old-param__icon{
-       width: 1.44vh;height: 1.44vh;
+       width: 1.44vh;height: 1.35vh;
       }
       .Old-Fixed-Param.hunger .old-param__icon{
-       width: 1.44vh;height: 1.44vh;
+       width: 1.40vh;height: 1.35vh;
       }
       .Old-Fixed-Param.breath .old-param__icon{
        width: .85vh;height: .95vh;
@@ -1347,9 +1347,9 @@ AddHud();
     const style = document.createElement('style');
     style.textContent = `
         [class*="green"], [class*="zone"], .hud-radmir-greenzone,
-        .green-zone, .gzone, .map__greenzone, .map-greenzone,
+        .green-zone, .gzone, .map__greenzone, 
         svg[class*="zone"], svg[class*="green"],
-        #app .hud-circle-green, #app .hud-round-green {
+        #app .hud-circle-green{
             display: none !important;
             opacity: 0 !important;
             visibility: hidden !important;
@@ -1427,5 +1427,4 @@ AddHud();
         };
     }, 100);
 })();
-
 
