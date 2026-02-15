@@ -418,7 +418,6 @@ justify-content: center;
     .Old-Fixed-Params {
     display: flex;
      align-items: center;
-     position: absolute;
       }
 
       .YORENOV-hud__cash {
