@@ -472,26 +472,22 @@ YORENOV-hud__cash #YORENOV-cash__value,.YORENOV-hud__cash #YORENOV-cash__value::
         padding-bottom: .7407vh;
       }
 
-      .Old-Fixed-Params__all {
-        display: flex;
-        align-items: center;
-      }
 
-      Old-Param-Progress {
+      .Old-Param-Progress {
         width: 16.2037vh;
         height: 1.1111vh;
         box-shadow: #000 0 0 0 .4167vh;
       }
 
-      Old-Progress__Values {
+      .Old-Progress__Values {
         height: 1.1111vh;
       }
 
-      Old-show-values Old-Param-Values {
+      .Old-show-values Old-Param-Values {
         opacity: 1;
       }
 
-      Old-Param-Values {
+      .Old-Param-Values {
         opacity: 0;
         width: 4.6296vh;
         color: #fff;
