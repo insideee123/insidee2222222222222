@@ -288,10 +288,10 @@ body #app .hud-radmir-info { display: none; }
     display: flex;
     justify-content: flex-end;
     margin-left: -.93vh;
-    margin-right: .46vh;
+    margin-right: .5vh;
 }
 .Ammo-in-clip, .old-param__icon {
-    margin-right: 1.11vh;
+    margin-right: 0.11vh;
 }
 .Old-Fixed-Weapon_back {
     position: absolute;
@@ -360,9 +360,10 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Param-Progress, .Old-Progress__Values {
     width: 8.40vh;
-    height: .36vh;
+    height: .66vh;
     background-color: #0000008c;
-    border-radius: .0vh;
+    border-radius: 0.66vh;
+    border: #000000;
 }
 .Old-Progress__Values {
     display: flex;
