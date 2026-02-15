@@ -222,47 +222,47 @@ function AddHud() {
 @font-face{font-family:'GothamPro Black Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');font-weight:900;font-style:italic}
 @font-face{font-family:'GTA Russia';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/GTA Russia.ttf') format('truetype');font-weight:900;font-style:normal}
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-Black/GothamPro-Black.ttf) format("truetype");font-weight:900;font-style:normal;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-Black/GothamPro-Black.ttf') format("truetype");font-weight:900;font-style:normal;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-BlackItalic/GothamPro-BlackItalic.ttf) format("truetype");font-weight:900;font-style:italic;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-BlackItalic/GothamPro-BlackItalic.ttf') format("truetype");font-weight:900;font-style:italic;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-Bold/GothamPro-Bold.ttf) format("truetype");font-weight:700;font-style:normal;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-Bold/GothamPro-Bold.ttf') format("truetype");font-weight:700;font-style:normal;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-Medium/GothamPro-Medium.ttf) format("truetype");font-weight:500;font-style:normal;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-Medium/GothamPro-Medium.ttf') format("truetype");font-weight:500;font-style:normal;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-Regular/GothamPro.ttf) format("truetype");font-weight:400;font-style:normal;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-Regular/GothamPro.ttf') format("truetype");font-weight:400;font-style:normal;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-Light/GothamPro-Light.ttf) format("truetype");font-weight:300;font-style:normal;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-Light/GothamPro-Light.ttf') format("truetype");font-weight:300;font-style:normal;
       }
 
       @font-face {
-        font-family:GothamPro;src:url(./fonts/GothamPro-LightItalic/GothamPro-LightItalic.ttf) format("truetype");font-weight:300;font-style:italic;
+        font-family:GothamPro;src:url('https://raw.githubusercontent.com/fonts/GothamPro-LightItalic/GothamPro-LightItalic.ttf') format("truetype");font-weight:300;font-style:italic;
       }
 
       @font-face {
-        font-family:ALSRubl;src:url(./fonts/ALSRubl.ttf) format("truetype");font-weight:400;font-style:normal;
+        font-family:ALSRubl;src:url('https://raw.githubusercontent.com/fonts/ALSRubl.ttf') format("truetype");font-weight:400;font-style:normal;
       }
 
       @font-face {
-        font-family:SAfonts;font-weight:600;font-style:normal;src:url(./fonts/SAfonts-Regular.ttf) format("truetype");
+        font-family:SAfonts;font-weight:600;font-style:normal;src:url('https://raw.githubusercontent.com/fonts/SAfonts-Regular.ttf') format("truetype");
       }
 
       @font-face {
-        font-family:BankGothic;font-weight:500;font-style:normal;src:url(./fonts/BankGothicRUSSMedium.ttf) format("truetype");
+        font-family:BankGothic;font-weight:500;font-style:normal;src:url('https://raw.githubusercontent.com/fonts/BankGothicRUSSMedium.ttf') format("truetype");
       }
 
       @font-face {
-        font-family:PricedownRus;font-weight:400;font-style:normal;src:url(./fonts/PricedownRus.ttf) format("truetype");
+        font-family:PricedownRus;font-weight:400;font-style:normal;src:url('https://raw.githubusercontent.com/fonts/PricedownRus.ttf') format("truetype");
       }
              :root {
         --bg: #000;
@@ -424,14 +424,14 @@ YORENOV-hud__cash #YORENOV-cash__value,.YORENOV-hud__cash #YORENOV-cash__value::
         letter-spacing: .2778vh;
         font-style: normal;
         font-size: 7.5vh;
-        font-family: SAfonts!important;
+        font-family: SAfonts !important;
       }
         
       .Old-Fixed__Cash .Old-Fixed-Cash__value::before {
         position: absolute;
         content: "j";
-        font-family: ALSRubl;
-        left: -3.8889vh;
+        font-family: SAfonts;
+        left: -1.8889vh;
         z-index: -1;
         margin-top: .2778vh;
         font-size: 5.0926vh;
@@ -441,12 +441,12 @@ YORENOV-hud__cash #YORENOV-cash__value,.YORENOV-hud__cash #YORENOV-cash__value::
         flex-direction: column;
         position: absolute;
         right: 4.6444vh;
-        top: 7.3148vh;
+        top: 9.3148vh;
         justify-content: flex-end;
         height: 9.1852vh;
         padding-bottom: .7407vh;
       }
-              .Old-Fixed-Param__amount {
+        .Old-Fixed-Param__amount {
         opacity: 0;
         width: 4.6296vh;
         color: #fff;
