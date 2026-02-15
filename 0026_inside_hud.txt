@@ -1125,7 +1125,7 @@ background-size: auto 100vh;
             }
         },
         money: (value) => {
-            const moneyEl = document.querySelector(".Old-Fixed-Cash span");
+            const moneyEl = document.querySelector("#YORENOV-cash__value span");
             if (moneyEl) moneyEl.textContent = formatNumberWithDots(value);
         },
         wanted: (value) => {
