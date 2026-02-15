@@ -444,7 +444,10 @@ justify-content: center;
         height: 9.1852vh;
         padding-bottom: 1vh;
       }
-        
+       .Old-Param-Progress, .Old-Progress__Values {
+         display: flex;
+        align-items: center;
+      }
       .Old-Param-Progress {
         width: 16.2037vh;
         height: 1.1111vh;
