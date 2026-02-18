@@ -463,15 +463,8 @@ body #app .hud-radmir-info { display: none; }
         
 .Old-Fixed-Param {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 4.6444vh;
-        top: 7.3148vh;
-        justify-content: flex-end;
-        height: 9.1852vh;
-        padding-bottom: .7407vh;
+        align-items: center;
       }
-
 
 .Old-Param-Progress, .Old-Progress__Values {
         width: 16.2037vh;
