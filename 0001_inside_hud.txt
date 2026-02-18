@@ -438,7 +438,7 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Fixed-Params {
     height: 13vh;
-    top: 7vh;
+    top: 8vh;
     position: relative;
     z-index: 1;
 }
@@ -449,7 +449,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Cash {
         position: absolute;
         right: 5.8889vh;
-        top: 10.0185vh;
+        top: 7.0185vh;
         transform: scale(1,.85);
         display: inline-flex;
         align-items: center;
