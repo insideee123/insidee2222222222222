@@ -355,7 +355,7 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Fixed-Logo {
         position: absolute;
-        top: 0.7vh;
+        top: 1vh;
         right: 4.7222vh;
         transform-origin: top right;
       }
@@ -490,7 +490,7 @@ body #app .hud-radmir-info { display: none; }
         color: #fff;
         font-size: 1.6667vh;
         font-weight: 500;
-        margin-left: 0%;  /**куда двигаются бары**\
+        margin-left: 50%;   // kyda dvigaetca bari
         position: relative;
         display: flex;
         justify-content: center;
