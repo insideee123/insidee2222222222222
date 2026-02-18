@@ -454,10 +454,9 @@ body #app .hud-radmir-info { display: none; }
       }
         
 .Old-Fixed-Param {
-    display: flex;
-    align-items: center;
-    margin-top: .95vh;
-}
+        display: flex;
+        align-items: center;
+      }
 .Old-Fixed-Param.health {
     margin-top: 0;
     margin-left: 1.45vh;
