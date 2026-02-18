@@ -372,18 +372,17 @@ body #app .hud-radmir-info { display: none; }
     display: flex;
 }
 .Old-Fixed-Main {
-    margin-top: .46vh;
-    margin-right: 3.46vh;
-}
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+      }
 .Old-Fixed-Weapon {
-    width: 16.6vh;
-    height: 16.6vh;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: -.93vh;
-    margin-right: .46vh;
-}
+        transform-origin: top right;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
 .Ammo-in-clip, .old-param__icon {
     margin-right: 1.11vh;
 }
