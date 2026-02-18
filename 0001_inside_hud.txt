@@ -372,34 +372,39 @@ body #app .hud-radmir-info { display: none; }
     display: flex;
 }
 .Old-Fixed-Main {
-    margin-top: .76vh;
-    margin-right: 0vh;
+    margin-top: .46vh;
+    margin-right: 3.46vh;
 }
 .Old-Fixed-Weapon {
-position: absolute;
- top: 4.537vh;
-right: 26.6667vh;
+    width: 16.6vh;
+    height: 16.6vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -.93vh;
+    margin-right: .46vh;
 }
 .Ammo-in-clip, .old-param__icon {
-    margin-right: 0.11vh;
+    margin-right: 1.11vh;
+}
+.Old-Fixed-Weapon_back {
+    position: absolute;
+    right: -2vh;
+    top: 0vh;
+    z-index: -1;
 }
 .Old-Fixed-Weapon_icon {
-height: 12.8704vh;
-width: 12.8704vh;
+    width: 36.2vh;
+    height: 16.6vh;
 }
 .Old-Fixed-Weapon_ammo {
-position: absolute;
-right: -2.5926vh;
-top: 10vh;
-color: #c8e0fa;
-width: 18.5185vh;
-text-align: center;
-display: flex;
-flex-direction: row;
-align-items: flex-end;
-justify-content: center;
-      }
-
+    position: absolute;
+    bottom:4.8vh;
+    right:4.3vh;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
 .Ammo-in-clip {
     font-family: 'GothamPro Bold Italic';
     font-weight: 900;
@@ -415,79 +420,73 @@ justify-content: center;
     font-size: 1.67vh;
     text-shadow: 0 0 .46vh #000000b3;
 }
-    .Old-Fixed-Params {
-    display: flex;
-     align-items: center;
-      }
-
-      .YORENOV-hud__cash {
-        position: absolute;
-        right: 8.8889vh;
-        top: 16.0185vh;
-        transform: scale(1,.85);
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .YORENOV-hud__cash #YORENOV-cash__value::before {
-        position: absolute;
-        content: "j";
-        font-family: "GothamPro Black Italic";
-        left: -3.8889vh;
-        z-index: -1;
-        margin-top: .2778vh;
-        font-size: 5.0926vh;
-      }
-
-      .YORENOV-hud__cash #YORENOV-cash__value {
-        font-weight: 900;
-        display: inline-block;
-        letter-spacing: .2778vh;
-        font-style: normal;
-        font-size: 7.5vh;
-        font-family: "GothamPro Black Italic" !important;
-      }
-.Old-Fixed-Params__all {
-    margin-top: 2vh;
+.Old-Fixed-Params {
+    height: 13vh;
+    position: relative;
+    z-index: 1;
 }
-       .Old-Fixed-Params__all {
+.Old-Fixed-Cash {
+    justify-content: flex-end;
+    color: white;
+    font-family: "GothamPro Black Italic";
+    font-style: italic;
+    font-size: 2.59vh;
+    text-shadow: 0 0 .46vh #00000080;
+}
+.Old-Fixed-Cash img {
+    margin-right: 13px;
+    margin-top: 1px;
+}
+.Old-Fixed-Params__all {
+    margin-top: 1vh;
+}
+.Old-Fixed-Param {
+    display: flex;
+    align-items: center;
+    margin-top: .95vh;
+}
+.Old-Fixed-Param.health {
+    margin-top: 0;
+    margin-left: 1.45vh;
+}
+.Old-Fixed-Param.armour, .Old-Param-Values {
+    margin-left: .93vh;
+}
+.Old-Param-Progress, .Old-Progress__Values {
         width: 16.2037vh;
         height: 1.1111vh;
         box-shadow: #000 0 0 0 .4167vh;
       }
 
-      .Old-Fixed-Param {
-        display: flex;
-        align-items: center;
-      }
-
-       .Old-Param-Progress, .Old-Progress__Values {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 4.6444vh;
-        top: 7.3148vh;
-        justify-content: flex-end;
-        height: 9.1852vh;
-        padding-bottom: .7407vh;
-        }
-
-      .Old-Progress__Values {
-        height: 1.1111vh;
-      }
-
-      .Old-Param-Values {
-        opacity: 0;
-        width: 4.6296vh;
-        color: #fff;
-        font-size: 1.6667vh;
-        font-weight: 500;
-        margin-left: -50%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      }
+.Old-Progress__Values {
+    display: flex;
+    justify-content: flex-end;
+}
+.Old-Progress__Values .circle {
+    width: .85vh;
+    height: .93vh;
+    margin-top: -.25vh;
+    margin-right: -.28vh;
+}
+.Old-Param-Values {
+    font-family: "GothamPro Light Italic";
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    width: 3.24vh;
+    font-size: 1.67vh;
+    text-shadow: 0 0 .46vh #000000b3;
+}
+.Old-Fixed-Freeze_text {
+    margin-right: 1vh;
+}
+.Old-Fixed-Freeze_value, .Old-Fixed-Freeze_text {
+    font-family: "GothamPro Bold";
+    font-weight: 900;
+    color: #c0ccec;
+    font-size: 2vh;
+    text-shadow: 0 0 2vh #000;
+}
 
 .Old-Fixed-Param.health .Old-Progress__Values {
     background-color: #5a0c0e;
