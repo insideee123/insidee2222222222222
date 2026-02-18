@@ -347,8 +347,8 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Logo img, .Old-Fixed-HudTop { transform-origin: top right; }
 .Old-Fixed-HudTop {
     position: absolute;
-    right: 1.4vw;
-    top: 5.4vh;
+    right: 1.2vh;
+    top: 3.4vh
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -470,9 +470,6 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Param.armour, .Old-Param-Values {
     margin-left: 0vh;
 }
-    .Old-Fixed-Param.hunger, .Old-Param-Values {
-    margin-left: 0vh;
-}
 .Old-Param-Progress, .Old-Progress__Values {
         width: 16.2037vh;
         height: 1.1111vh;
@@ -510,7 +507,7 @@ body #app .hud-radmir-info { display: none; }
     text-shadow: 0 0 2vh #000;
 }
 .Old-Fixed-Param.hunger {
-    margin-left: .35vh;
+    margin-left: 0vh;
 }
 .Old-Fixed-Param.breath {
     margin-left: 3px;
@@ -549,7 +546,7 @@ body #app .hud-radmir-info { display: none; }
     transform-origin: right bottom;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 6vh;
 }
 .Old-Fixed-Freeze {
     position: absolute;
