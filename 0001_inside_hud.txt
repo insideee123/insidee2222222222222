@@ -210,6 +210,122 @@ function AddHud() {
         hudStyleElement = document.createElement("style");
         hudStyleElement.id = "hudStyles";
         hudStyleElement.innerHTML = `
+        .YORENOV-param__amount,.YORENOV-weapon__ammo #YORENOV-ammo__in-clip,.YORENOV-weapon__ammo #YORENOV-ammo__total {
+        text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
+      }
+
+      #app .window[data-dialog-type="2"] .window-table__item:first-child,.YORENOV-param {
+        margin-top: .463vh;
+      }
+
+      #app .window .window__buttons .controls-button__container_disabled,.YORENOV-hud,.yorenov-prev-mn {
+        pointer-events: none;
+      }
+
+      body {
+        font-family: var(--font-famaly-all);
+      }
+
+      .yorenov-prev-mn {
+        width: 11vh;
+        height: 3vh;
+        margin-left: 2vh;
+      }
+
+      #app .hud-radmir-radar {
+        overflow: hidden;
+        width: 23vh;
+        height: 23vh;
+        left: 6vh;
+        bottom: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale3d(.9,.9,1);
+        transform-origin: 0% 100% 0px;
+      }
+
+      #app .hud-hassle-map,#app .hud-hassle-map .map-mask,#app .hud-radmir-radar__radar,#app .window .window__image {
+        border-radius: 0;
+      }
+
+      #app .hud-hassle-map>img,#app .hud-radmir-radar__radar>img,#app .hud-radmir-wanted,#app .overlay-container,#app .scrollable-container_type_1 .scrollable-container__rail_y,#app .vignette,#app .window .modal__pattern-wrapper {
+        display: none;
+      }
+
+      #app .hud-hassle-map .map-mask {
+        height: 155%!important;
+        width: 155%!important;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-Black/GothamPro-Black.ttf) format("truetype");font-weight:900;font-style:normal;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-BlackItalic/GothamPro-BlackItalic.ttf) format("truetype");font-weight:900;font-style:italic;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-Bold/GothamPro-Bold.ttf) format("truetype");font-weight:700;font-style:normal;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-Medium/GothamPro-Medium.ttf) format("truetype");font-weight:500;font-style:normal;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-Regular/GothamPro.ttf) format("truetype");font-weight:400;font-style:normal;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-Light/GothamPro-Light.ttf) format("truetype");font-weight:300;font-style:normal;
+      }
+
+      @font-face {
+        font-family:GothamPro;src:url(./fonts/GothamPro-LightItalic/GothamPro-LightItalic.ttf) format("truetype");font-weight:300;font-style:italic;
+      }
+
+      @font-face {
+        font-family:ALSRubl;src:url(./fonts/ALSRubl.ttf) format("truetype");font-weight:400;font-style:normal;
+      }
+
+      @font-face {
+        font-family:SAfonts;font-weight:600;font-style:normal;src:url(./fonts/SAfonts-Regular.ttf) format("truetype");
+      }
+
+      @font-face {
+        font-family:BankGothic;font-weight:500;font-style:normal;src:url(./fonts/BankGothicRUSSMedium.ttf) format("truetype");
+      }
+
+      @font-face {
+        font-family:PricedownRus;font-weight:400;font-style:normal;src:url(./fonts/PricedownRus.ttf) format("truetype");
+      }
+
+      :root {
+        --bg: #000;
+        --bg-20: #00000033;
+        --bg-40: #00000066;
+        --bg-50: #00000080;
+        --bg-60: #00000099;
+        --bg-80: #000000cc;
+        --color: #fff;
+        --color-10: #ffffff1a;
+        --color-30: #ffffff4d;
+        --font-famaly-all: GothamPro,"Open Sans";
+        --add-bg: #000000cc;
+        --add-bg-2: black;
+        --progress-bg: black;
+        --item-select-active: #85171a;
+        --item-color-shadow: #85171a99;
+        --color-buttom-active: #00800066;
+        --color-buttom-hover: #0080001a;
+        --border-container: 0.1852vh solid #fff;
+        --border-container-active: 0.1852vh solid #85171a;
+        --border-seriy: 0.3704vh solid #797778;
+        --border-bottom-white: 0.4630vh solid #ffffff1a;
+        --add-text: white;
+      }
 @font-face{font-family:'GothamPro Light';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');font-weight:300;font-style:normal}
 @font-face{font-family:'GothamPro Light Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');font-weight:300;font-style:italic}
 @font-face{font-family:'GothamPro Regular';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');font-weight:400;font-style:normal}
@@ -292,32 +408,6 @@ function AddHud() {
 .Old-Fixed-Logo,
 .Old-Fixed-Main,
 .Old-Fixed-Params,
-.yorenov-prev-mn,
-.YORENOV-param__amount,
-.YORENOV-weapon__ammo #YORENOV-ammo__in-clip,
-.YORENOV-weapon__ammo #YORENOV-ammo__total,
-.YORENOV-weapon__ammo,
-.YORENOV-weapon__icon,
-.YORENOV-hud__weapon,
-.YORENOV-logo__image,
-.YORENOV-hud__logo,
-.YORENOV-green-zone__image,
-.YORENOV-hud__green-zone,
-.YORENOV-radar__images,
-.YORENOV-hud__radar-border,
-.YORENOV-hud-base,
-.YORENOV-hud,
-YORENOV-hud__cash #YORENOV-cash__value,
-.YORENOV-hud__cash #YORENOV-cash__value::before,
-.YORENOV-hud__cash,
-.YORENOV-hud__cash #YORENOV-cash__value::before,
-.YORENOV-hud__cash #YORENOV-cash__value,
-.YORENOV-hud__params,
-.YORENOV-param,
-.YORENOV-param__progress,
-.YORENOV-progress__value,
-.show-values .YORENOV-param__amount,
-.YORENOV-param__amount,
 .Old-Fixed-Cash,
 .Old-Fixed-Params__all,
 .Old-Fixed-Param,
@@ -372,31 +462,21 @@ body #app .hud-radmir-info { display: none; }
     display: flex;
 }
 .Old-Fixed-Main {
-        transform-origin: top right;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
-.Old-Fixed-Weapon {
         width: 100vw;
         height: 100vh;
         z-index: -1;
       }
+        
+.Old-Fixed-Weapon {
+       position: absolute;
+        top: 4.537vh;
+        right: 26.6667vh;
+      }
 
-.Ammo-in-clip, .old-param__icon {
-    margin-right: 1.11vh;
-}
-.Old-Fixed-Weapon_back {
-    position: absolute;
-    right: -2vh;
-    top: 0vh;
-    z-index: -1;
-}
 .Old-Fixed-Weapon_icon {
-    width: 36.2vh;
-    height: 16.6vh;
-}
+        height: 12.8704vh;
+        width: 12.8704vh;
+      }
 .Old-Fixed-Weapon_ammo {
     position: absolute;
     bottom:4.8vh;
@@ -405,6 +485,11 @@ body #app .hud-radmir-info { display: none; }
     align-items: flex-end;
     color: #fff;
 }
+          .Ammo-full,.Ammo-in-clip {
+        font-family: GothamPro;
+        font-weight: 900;
+        font-size: 2.3148vh;
+      }
 .Ammo-in-clip {
     font-family: 'GothamPro Bold Italic';
     font-weight: 900;
@@ -414,12 +499,18 @@ body #app .hud-radmir-info { display: none; }
     text-shadow: 0 0 .46vh #00000080;
 }
 .Ammo-full {
-    font-family: 'GothamPro Light Italic';
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1.67vh;
-    text-shadow: 0 0 .46vh #000000b3;
-}
+        position: absolute;
+        right: -2.5926vh;
+        top: 10vh;
+        color: #c8e0fa;
+        width: 18.5185vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+      }
+
 .Old-Fixed-Params {
     height: 13vh;
     position: relative;
