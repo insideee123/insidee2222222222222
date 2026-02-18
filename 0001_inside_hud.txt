@@ -491,6 +491,7 @@ body #app .hud-radmir-info { display: none; }
         font-size: 1.6667vh;
         font-weight: 500;
         margin-left: 0%;   // kyda dvigaetca bari
+         margin-top: 9vh;
         position: relative;
         display: flex;
         justify-content: center;
