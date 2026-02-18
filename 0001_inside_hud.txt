@@ -446,8 +446,17 @@ body #app .hud-radmir-info { display: none; }
         color: #36662c;
         text-shadow: 0 -.463vh 0 #000300,0 -.463vh 0 #000300,0 .463vh 0 #000300,0 .463vh 0 #000300,-.463vh 0 0 #000300,.463vh 0 0 #000300,-.463vh 0 0 #000300,.463vh 0 0 #000300,-.0926vh -.463vh 0 #000300,.0926vh -.463vh 0 #000300,-.0926vh .463vh 0 #000300,.0926vh .463vh 0 #000300,-.463vh -.0926vh 0 #000300,.463vh -.0926vh 0 #000300,-.463vh .0926vh 0 #000300,.463vh .0926vh 0 #000300,-.1852vh -.463vh 0 #000300,.1852vh -.463vh 0 #000300,-.1852vh .463vh 0 #000300,.1852vh .463vh 0 #000300,-.463vh -.1852vh 0 #000300,.463vh -.1852vh 0 #000300,-.463vh .1852vh 0 #000300,.463vh .1852vh 0 #000300,-.2778vh -.463vh 0 #000300,.2778vh -.463vh 0 #000300,-.2778vh .463vh 0 #000300,.2778vh .463vh 0 #000300,-.463vh -.2778vh 0 #000300,.463vh -.2778vh 0 #000300,-.463vh .2778vh 0 #000300,.463vh .2778vh 0 #000300,-.3704vh -.463vh 0 #000300,.3704vh -.463vh 0 #000300,-.3704vh .463vh 0 #000300,.3704vh .463vh 0 #000300,-.463vh -.3704vh 0 #000300,.463vh -.3704vh 0 #000300,-.463vh .3704vh 0 #000300,.463vh .3704vh 0 #000300,-.463vh -.463vh 0 #000300,.463vh -.463vh 0 #000300,-.463vh .463vh 0 #000300,.463vh .463vh 0 #000300,-.463vh -.463vh 0 #000300,.463vh -.463vh 0 #000300,-.463vh .463vh 0 #000300,.463vh .463vh 0 #000300;
       }
-
-        .Old-Fixed-Cash {
+.Old-Fixed-Cash {
+        position: absolute;
+        content: "j";
+        color: #36662c;
+        font-family: ALSRubl;
+        left: -3.8889vh;
+        z-index: -1;
+        margin-top: .2778vh;
+        font-size: 5.0926vh;
+      }
+        .YORENOV-hud__cash {
         position: absolute;
         right: 8.8889vh;
         top: 16.0185vh;
@@ -456,7 +465,7 @@ body #app .hud-radmir-info { display: none; }
         align-items: center;
       }
 
-      .Old-Fixed-Cash .Old-Fixed-Cash__value::before {
+      .YORENOV-hud__cash #YORENOV-cash__value::before {
         position: absolute;
         content: "j";
         font-family: ALSRubl;
@@ -466,7 +475,7 @@ body #app .hud-radmir-info { display: none; }
         font-size: 5.0926vh;
       }
 
-      .Old-Fixed-Cash #Old-Fixed-Cash__value {
+      .YORENOV-hud__cash #YORENOV-cash__value {
         font-weight: 900;
         display: inline-block;
         letter-spacing: .2778vh;
@@ -474,7 +483,7 @@ body #app .hud-radmir-info { display: none; }
         font-size: 7.5vh;
         font-family: SAfonts!important;
       }
-
+        
 .Old-Fixed-Cash img {
     margin-right: 13px;
     margin-top: 1px;
