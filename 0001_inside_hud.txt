@@ -432,7 +432,7 @@ justify-content: center;
       .YORENOV-hud__cash #YORENOV-cash__value::before {
         position: absolute;
         content: "j";
-        font-family: ALSRubl;
+        font-family: "GothamPro Black Italic";
         left: -3.8889vh;
         z-index: -1;
         margin-top: .2778vh;
@@ -445,23 +445,23 @@ justify-content: center;
         letter-spacing: .2778vh;
         font-style: normal;
         font-size: 7.5vh;
-        font-family: SAfonts!important;
+        font-family: "GothamPro Black Italic" !important;
       }
 .Old-Fixed-Params__all {
     margin-top: 2vh;
 }
-       .YORENOV-hud__params {
+       .Old-Fixed-Params__all {
         width: 16.2037vh;
         height: 1.1111vh;
         box-shadow: #000 0 0 0 .4167vh;
       }
 
-      .YORENOV-param {
+      .Old-Fixed-Param {
         display: flex;
         align-items: center;
       }
 
-       .YORENOV-param__progress {
+       .Old-Param-Progress, .Old-Progress__Values {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -472,15 +472,11 @@ justify-content: center;
         padding-bottom: .7407vh;
         }
 
-      .YORENOV-progress__value {
+      .Old-Progress__Values {
         height: 1.1111vh;
       }
 
-      .show-values .YORENOV-param__amount {
-        opacity: 1;
-      }
-
-      .YORENOV-param__amount {
+      .Old-Param-Values {
         opacity: 0;
         width: 4.6296vh;
         color: #fff;
@@ -492,40 +488,6 @@ justify-content: center;
         justify-content: center;
         text-align: center;
       }
-
-      .YORENOV-param__health .YORENOV-param__progress {
-        background-color: #5a0c0e;
-      }
-
-      .YORENOV-param__health .YORENOV-progress__value {
-        width: 50%;
-        background-color: #b11a22;
-      }
-
-      .YORENOV-param__hunger .YORENOV-param__progress {
-        background-color: #5a2f10;
-      }
-
-      .YORENOV-param__hunger .YORENOV-progress__value {
-        width: 50%;
-        background-color: #ff872e;
-      }
-
-      .YORENOV-param__armour .YORENOV-param__progress {
-        background-color: #5e5e5e;
-      }
-
-      .YORENOV-param__armour .YORENOV-progress__value {
-        width: 50%;
-        background-color: #fff;
-      }
-.Old-Fixed-Freeze_value, .Old-Fixed-Freeze_text {
-    font-family: "GothamPro Bold";
-    font-weight: 900;
-    color: #c0ccec;
-    font-size: 2vh;
-    text-shadow: 0 0 2vh #000;
-}
 
 .Old-Fixed-Param.health .Old-Progress__Values {
     background-color: #5a0c0e;
@@ -982,40 +944,36 @@ background-size: auto 100vh;
         const hudElement = document.createElement("div");
         hudElement.id = 'OldHudContainer';
         hudElement.innerHTML = `
-      
-        <div class="Old-Fixed-Hud">
+      <div class="Old-Fixed-Hud">
         <div class="Old-Fixed-HudTop">
           <div class="Old-Fixed-Logo">
             <img src="${oldRadmirConfig.logo[1]}">
             <div class="Old-Fixed-Bonus">x3</div>
           </div>
           <div class="Old-Fixed-Main">
-            <div class=".YORENOV-hud__params">
-              <div class=".YORENOV-hud__cash"><img src="${oldRadmirConfig.icons.cash}"><span>0</span></div>
+            <div class="Old-Fixed-Params">
+              <div class="Old-Fixed-Cash"><img src="${oldRadmirConfig.icons.cash}"><span>0</span></div>
               <div class="Old-Fixed-Params__all">
-                <div class=".YORENOV-param">
+                <div class="Old-Fixed-Param health">
                   <img src="${oldRadmirConfig.icons.health}" class="old-param__icon">
-                  <div class=".YORENOV-param__progress">
-                    <div class=".YORENOV-progress__value" style="width:100%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
+                  <div class="Old-Param-Progress">
+                    <div class="Old-Progress__Values" style="width:100%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
                   </div>
                   <span class="Old-Param-Values">100</span>
                 </div>
-                <div class=".YORENOV-param">
+                <div class="Old-Fixed-Param armour">
                   <img src="${oldRadmirConfig.icons.armour}" class="old-param__icon">
-                  <div class=".YORENOV-param__progress">
-                    <div class=".YORENOV-progress__value" style="width:0%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
+                  <div class="Old-Param-Progress">
+                    <div class="Old-Progress__Values" style="width:0%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
                   </div>
                   <span class="Old-Param-Values">0</span>
                 </div>
-                <div class=".YORENOV-param">
+                <div class="Old-Fixed-Param hunger">
                   <img src="${oldRadmirConfig.icons.hunger}" class="old-param__icon">
-                  <div class=".YORENOV-param__progress">
-                    <div class=".YORENOV-progress__value" style="width:100%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
+                  <div class="Old-Param-Progress">
+                    <div class="Old-Progress__Values" style="width:100%"><img src="${oldRadmirConfig.icons.circle}" class="circle"></div>
                   </div>
                   <span class="Old-Param-Values">100</span>
-                </div>
-                <div class="YORENOV-hud__cash">
-                <div id="YORENOV-cash__value">10000</div>
                 </div>
                 <div class="Old-Fixed-Param breath">
                   <img src="${oldRadmirConfig.icons.breath}" class="old-param__icon">
@@ -1117,7 +1075,7 @@ background-size: auto 100vh;
             }
         },
         money: (value) => {
-            const moneyEl = document.querySelector("#YORENOV-cash__value span");
+            const moneyEl = document.querySelector(".Old-Fixed-Cash span");
             if (moneyEl) moneyEl.textContent = formatNumberWithDots(value);
         },
         wanted: (value) => {
@@ -1168,10 +1126,10 @@ background-size: auto 100vh;
     }
 
     function updateParam(paramClass, value) {
-        const paramElement = document.querySelector(`.YORENOV-param.${paramClass}`);
+        const paramElement = document.querySelector(`.Old-Fixed-Param.${paramClass}`);
         if (paramElement) {
-            const progressBar = paramElement.querySelector(".YORENOV-hud__params");
-            const valueText = paramElement.querySelector(".YORENOV-param__amount");
+            const progressBar = paramElement.querySelector(".Old-Progress__Values");
+            const valueText = paramElement.querySelector(".Old-Param-Values");
             progressBar.style.width = `${value}%`;
             valueText.textContent = value;
         }
@@ -1226,3 +1184,5 @@ background-size: auto 100vh;
 }
 
 AddHud();
+
+
