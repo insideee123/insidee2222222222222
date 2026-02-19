@@ -1502,6 +1502,20 @@ money: (value) => {
                 
                 createHud();
 
+             setTimeout(() => {
+    const container = document.querySelector('.Old-Fixed-Params');
+    if (!container) return;
+
+    const hp = container.querySelector('.Old-Fixed-Param.health');
+    const hunger = container.querySelector('.Old-Fixed-Param.hunger');
+    const armour = container.querySelector('.Old-Fixed-Param.armour');
+
+    if (!hp || !hunger || !armour) return;
+
+    // нужный порядок: HP -> Еда -> Броня
+    container.append(hp, hunger, armour);
+}, 0);
+
                 
                 const props = [
     'health',   
