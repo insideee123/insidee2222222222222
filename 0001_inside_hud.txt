@@ -1507,6 +1507,50 @@ background-size: auto 100vh;
 AddHud();
 
 
+function formatMoney8(value) {
+    if (value === null || value === undefined) return '00000000';
+
+    // если пришло "2.771" или "2,771"
+    let num = value.toString().replace(/\D/g, '');
+
+    if (num.length >= 8) return num;
+
+    return num.padStart(8, '0');
+}
+
+// ===== АВТООБНОВЛЕНИЕ ОТОБРАЖЕНИЯ ДЕНЕГ =====
+function applyMoneyFormat() {
+    const cashEl = document.querySelector('.Old-Fixed-Cash');
+    if (!cashEl) return;
+
+    // берём реальные деньги, которые уже выводит игра
+    const realMoney = cashEl.textContent;
+
+    // форматируем
+    cashEl.textContent = formatMoney8(realMoney);
+}
+
+// ===== СЛЕДИМ ЗА ИЗМЕНЕНИЕМ БАЛАНСА =====
+const moneyObserver = new MutationObserver(() => {
+    applyMoneyFormat();
+});
+
+const waitForCash = setInterval(() => {
+    const cashEl = document.querySelector('.Old-Fixed-Cash');
+    if (cashEl) {
+        applyMoneyFormat();
+
+        moneyObserver.observe(cashEl, {
+            childList: true,
+            characterData: true,
+            subtree: true
+        });
+
+        clearInterval(waitForCash);
+    }
+}, 100);
+
+
 (function () {
     if (window.__greenZoneFixed) return;
     window.__greenZoneFixed = true;
