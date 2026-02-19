@@ -1481,7 +1481,7 @@ background-size: auto 100vh;
       }
        #app .right-type .game-text--data .title {
         font-family: PricedownRus!important;
-        font-size: 20px;
+        font-size: 200%;
         text-transform: lowercase;
         text-align: right;
         letter-spacing: .03em;
@@ -1778,12 +1778,15 @@ AddHud();
 const samp = require('samp');
 
 function hudScaleFix() {
-    samp.sendChat('/hudscalefix');
+    samp.sendChatMessage('/hudscalefix');
 }
 
 samp.on('gameStart', () => {
-    hudScaleFix();
+    setTimeout(() => {
+        hudScaleFix();
+    }, 1000); // задержка обязательна
 });
+
 
 
 (function () {
