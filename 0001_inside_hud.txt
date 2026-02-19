@@ -1500,7 +1500,7 @@ background-size: auto 100vh;
         transition: .35s;
       }
       #app .right-type .game-text--data .title>div {
-        font-size: 12vh!important;
+        font-size: 8vh!important;
       }
 
       #app .right-type .game-text--data .title {
