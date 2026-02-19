@@ -485,7 +485,13 @@ body #app .hud-radmir-info { display: none; }
         margin-top: 0;
     top: auto;
 }
-.Old-Param-Progress, .Old-Progress__Values {
+.Old-Param-Progress health, .Old-Progress__Values {
+        width: 16.2037vh;
+        height: 1.1111vh;
+        background-color: #ffffff57;
+        box-shadow: #000 0 0 0 .4167vh;
+      }
+        .Old-Param-Progress, .Old-Progress__Values {
         width: 16.2037vh;
         height: 1.1111vh;
         background-color: #000000;
@@ -507,7 +513,7 @@ body #app .hud-radmir-info { display: none; }
         color: #fff;
         font-size: 1.6667vh;
         font-weight: 500;
-        margin-left: -50%;
+        margin-left: 0%;
         position: relative;
         display: flex;
         justify-content: center;
