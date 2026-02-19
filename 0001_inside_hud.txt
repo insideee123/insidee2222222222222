@@ -431,7 +431,7 @@ body #app .hud-radmir-info { display: none; }
 }
 .Ammo-full {
     font-style: normal;
-    font-size: 3vh;
+    font-size: 2.8vh;
     font-family: PricedownRus !important;
     line-height: 1;
     text-shadow: 0 0 .46vh #00000080;
@@ -519,15 +519,13 @@ body #app .hud-radmir-info { display: none; }
     display: none;
 }
 .Old-Fixed-Param.health .Old-Progress__Values {
-    background-color: #5a0c0e;
-    
-}
-.Old-Fixed-Param.armour .Old-Progress__Values {
-    background-color: #5e5e5e;
-    
+    background-color: #5a0c0e;   
 }
 .Old-Fixed-Param.hunger .Old-Progress__Values {
     background-color: #5a2f10;
+}
+    .Old-Fixed-Param.armour .Old-Progress__Values {
+    background-color: #5e5e5e;
 }
 .Old-Fixed-Param.breath .Old-Progress__Values {
     background-color: #3c6893;
@@ -1532,7 +1530,7 @@ AddHud();
     `;
     customZone.style.cssText = `
         position: absolute;
-        left = 290vh;
+        left = -290vh;
         bottom: 5vh;
         display: none;
         align-items: center;
