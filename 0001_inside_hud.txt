@@ -335,6 +335,8 @@ function AddHud() {
 .Old-Fixed-Logo,
 .Old-Fixed-Main,
 .Old-Fixed-Params,
+.YORENOV-green-zone__image,
+.YORENOV-hud__green-zone,
 .Old-Fixed-Cash,
 .Old-Fixed-Params__all,
 .Old-Fixed-Param,
@@ -386,6 +388,19 @@ body #app .hud-radmir-info { display: none; }
        font-family:"GothamPro Black Italic";
        font-style:italic;
        font-size:1.39vh;
+      }
+             .YORENOV-hud__green-zone {
+        position: absolute;
+        transform-origin: bottom right;
+        right: 8vh;
+        bottom: 5vh;
+        transition: .35s;
+        z-index: -1;
+      }
+
+      .YORENOV-green-zone__image {
+        width: 11.3889vh;
+        height: 4.8148vh;
       }
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
