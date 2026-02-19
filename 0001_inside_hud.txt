@@ -1507,47 +1507,54 @@ background-size: auto 100vh;
 AddHud();
 
 
+// ===== ФОРМАТ ДЕНЕГ: 8 ЗНАКОВ =====
 function formatMoney8(value) {
-    if (value === null || value === undefined) return '00000000';
-
-    // если пришло "2.771" или "2,771"
     let num = value.toString().replace(/\D/g, '');
-
+    if (num.length === 0) return null; // <-- КЛЮЧЕВО
     if (num.length >= 8) return num;
-
     return num.padStart(8, '0');
 }
 
-// ===== АВТООБНОВЛЕНИЕ ОТОБРАЖЕНИЯ ДЕНЕГ =====
+// ===== ПРИМЕНЕНИЕ ФОРМАТА =====
 function applyMoneyFormat() {
     const cashEl = document.querySelector('.Old-Fixed-Cash');
     if (!cashEl) return;
 
-    // берём реальные деньги, которые уже выводит игра
-    const realMoney = cashEl.textContent;
+    const raw = cashEl.textContent;
 
-    // форматируем
-    cashEl.textContent = formatMoney8(realMoney);
+    // если денег ещё нет — НЕ ТРОГАЕМ
+    const formatted = formatMoney8(raw);
+    if (formatted === null) return;
+
+    // защита от зацикливания
+    if (cashEl.dataset.formatted === '1') return;
+
+    cashEl.dataset.formatted = '1';
+    cashEl.textContent = formatted;
 }
 
-// ===== СЛЕДИМ ЗА ИЗМЕНЕНИЕМ БАЛАНСА =====
+// ===== НАБЛЮДАТЕЛЬ =====
 const moneyObserver = new MutationObserver(() => {
-    applyMoneyFormat();
-});
-
-const waitForCash = setInterval(() => {
     const cashEl = document.querySelector('.Old-Fixed-Cash');
     if (cashEl) {
+        cashEl.dataset.formatted = '0'; // разрешаем обновление
         applyMoneyFormat();
-
-        moneyObserver.observe(cashEl, {
-            childList: true,
-            characterData: true,
-            subtree: true
-        });
-
-        clearInterval(waitForCash);
     }
+});
+
+// ===== ОЖИДАНИЕ HUD =====
+const waitForCash = setInterval(() => {
+    const cashEl = document.querySelector('.Old-Fixed-Cash');
+    if (!cashEl) return;
+
+    moneyObserver.observe(cashEl, {
+        childList: true,
+        characterData: true,
+        subtree: true
+    });
+
+    applyMoneyFormat();
+    clearInterval(waitForCash);
 }, 100);
 
 
