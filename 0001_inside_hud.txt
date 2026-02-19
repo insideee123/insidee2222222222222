@@ -1479,7 +1479,14 @@ background-size: auto 100vh;
         opacity: 1;
         transition: .35s;
       }
-
+       #app .right-type .game-text--data .title {
+        font-family: PricedownRus!important;
+        text-transform: lowercase;
+        text-align: right;
+        letter-spacing: .03em;
+        transform: scale(1,.65);
+        text-shadow: 0 -.5556vh 0 rgba(0,0,0,.3),0 -.5556vh 0 rgba(0,0,0,.3),0 .5556vh 0 rgba(0,0,0,.3),0 .5556vh 0 rgba(0,0,0,.3),-.5556vh 0 0 rgba(0,0,0,.3),.5556vh 0 0 rgba(0,0,0,.3),-.5556vh 0 0 rgba(0,0,0,.3),.5556vh 0 0 rgba(0,0,0,.3),-.0926vh -.5556vh 0 rgba(0,0,0,.3),.0926vh -.5556vh 0 rgba(0,0,0,.3),-.0926vh .5556vh 0 rgba(0,0,0,.3),.0926vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.0926vh 0 rgba(0,0,0,.3),.5556vh -.0926vh 0 rgba(0,0,0,.3),-.5556vh .0926vh 0 rgba(0,0,0,.3),.5556vh .0926vh 0 rgba(0,0,0,.3),-.1852vh -.5556vh 0 rgba(0,0,0,.3),.1852vh -.5556vh 0 rgba(0,0,0,.3),-.1852vh .5556vh 0 rgba(0,0,0,.3),.1852vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.1852vh 0 rgba(0,0,0,.3),.5556vh -.1852vh 0 rgba(0,0,0,.3),-.5556vh .1852vh 0 rgba(0,0,0,.3),.5556vh .1852vh 0 rgba(0,0,0,.3),-.2778vh -.5556vh 0 rgba(0,0,0,.3),.2778vh -.5556vh 0 rgba(0,0,0,.3),-.2778vh .5556vh 0 rgba(0,0,0,.3),.2778vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.2778vh 0 rgba(0,0,0,.3),.5556vh -.2778vh 0 rgba(0,0,0,.3),-.5556vh .2778vh 0 rgba(0,0,0,.3),.5556vh .2778vh 0 rgba(0,0,0,.3),-.3704vh -.5556vh 0 rgba(0,0,0,.3),.3704vh -.5556vh 0 rgba(0,0,0,.3),-.3704vh .5556vh 0 rgba(0,0,0,.3),.3704vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.3704vh 0 rgba(0,0,0,.3),.5556vh -.3704vh 0 rgba(0,0,0,.3),-.5556vh .3704vh 0 rgba(0,0,0,.3),.5556vh .3704vh 0 rgba(0,0,0,.3),-.463vh -.5556vh 0 rgba(0,0,0,.3),.463vh -.5556vh 0 rgba(0,0,0,.3),-.463vh .5556vh 0 rgba(0,0,0,.3),.463vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.463vh 0 rgba(0,0,0,.3),.5556vh -.463vh 0 rgba(0,0,0,.3),-.5556vh .463vh 0 rgba(0,0,0,.3),.5556vh .463vh 0 rgba(0,0,0,.3),-.5556vh -.5556vh 0 rgba(0,0,0,.3),.5556vh -.5556vh 0 rgba(0,0,0,.3),-.5556vh .5556vh 0 rgba(0,0,0,.3),.5556vh .5556vh 0 rgba(0,0,0,.3),-.5556vh -.5556vh 0 rgba(0,0,0,.3),.5556vh -.5556vh 0 rgba(0,0,0,.3),-.5556vh .5556vh 0 rgba(0,0,0,.3),.5556vh .5556vh 0 rgba(0,0,0,.3)!important;
+      }
       #app .login-form__button,#app .registration-bonuses__button-text,#app .registration-form__button-text {
         color: #fff!important;
         opacity: 1;
