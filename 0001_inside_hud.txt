@@ -1507,27 +1507,39 @@ background-size: auto 100vh;
 AddHud();
 
 
-// ===== ФОРМАТ: 8 ЗНАКОВ =====
+// ===== ФОРМАТ ДЕНЕГ (8 ЗНАКОВ) =====
 function formatMoney8(value) {
-    const num = value.toString().replace(/\D/g, '');
-    if (!num) return null;
-    if (num.length >= 8) return num;
-    return num.padStart(8, '0');
+    if (!value) return null;
+
+    // оставляем цифры и точки
+    let cleaned = value.toString().replace(/[^\d.]/g, '');
+
+    // если формат вида 2.771 → 2771
+    if (cleaned.includes('.')) {
+        cleaned = cleaned.replace(/\./g, '');
+    }
+
+    if (!cleaned) return null;
+
+    if (cleaned.length >= 8) return cleaned;
+
+    return cleaned.padStart(8, '0');
 }
 
-// ===== МЯГКОЕ ОБНОВЛЕНИЕ (БЕЗ ФРИЗОВ) =====
+// ===== БЕЗОПАСНОЕ ОБНОВЛЕНИЕ =====
 setInterval(() => {
     const cashEl = document.querySelector('.Old-Fixed-Cash');
     if (!cashEl) return;
 
-    const raw = cashEl.textContent;
+    const raw = cashEl.textContent.trim();
     const formatted = formatMoney8(raw);
 
     if (!formatted) return;
-    if (raw === formatted) return; // ← КЛЮЧЕВО
+    if (raw === formatted) return;
 
     cashEl.textContent = formatted;
 }, 300);
+
 
 
 
