@@ -547,6 +547,21 @@ body #app .hud-radmir-info { display: none; }
     background-color: #3c6893;
 }
     
+/* HP – нижний слой */
+.Old-Fixed-Param.health .Old-Param-Progress {
+    background-color: #ff001e;
+}
+
+/* Armor – нижний слой */
+.Old-Fixed-Param.armour .Old-Param-Progress {
+    background-color: #00d134;
+}
+
+/* Hunger – нижний слой */
+.Old-Fixed-Param.hunger .Old-Param-Progress {
+    background-color: #ff00f2;
+}
+
 .Old-Fixed-Wanted {
         position: absolute;
         right: 8.7037vh;
