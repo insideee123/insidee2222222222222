@@ -1481,6 +1481,7 @@ background-size: auto 100vh;
       }
        #app .right-type .game-text--data .title {
         font-family: PricedownRus!important;
+        font-size: 4vh;
         text-transform: lowercase;
         text-align: right;
         letter-spacing: .03em;
