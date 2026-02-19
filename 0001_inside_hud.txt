@@ -467,7 +467,7 @@ body #app .hud-radmir-info { display: none; }
         font-family: ALSRubl;
         left: -3.8889vh;
         z-index: -1;
-        margin-top: .2778vh;
+        margin-top: .2678vh;
         font-size: 5.0926vh;
       }
         
@@ -1516,34 +1516,41 @@ background-size: auto 100vh;
 AddHud();
 
 
-// ===== 8-ЗНАЧНЫЕ ДЕНЬГИ (ПОСЛЕ ОТРИСОВКИ HUD) =====
-function to8Digits(text) {
+let lastMoneyValue = null;
+
+// из "2.771" -> 2771
+function extractNumber(text) {
     if (!text) return null;
+    const n = text.replace(/[^\d]/g, '');
+    return n ? parseInt(n, 10) : null;
+}
 
-    // "2.771" -> "2771"
-    let num = text.replace(/[^\d]/g, '');
-    if (!num) return null;
-
-    return num.length >= 8 ? num : num.padStart(8, '0');
+function to8Digits(num) {
+    const s = num.toString();
+    return s.length >= 8 ? s : s.padStart(8, '0');
 }
 
 setInterval(() => {
-    const cashEl = document.querySelector('.Old-Fixed-Cash');
-    if (!cashEl) return;
+    const valueEl = document.querySelector('.Old-Fixed-Cash .cash-value')
+        || document.querySelector('.Old-Fixed-Cash');
+    if (!valueEl) return;
 
-    const raw = cashEl.textContent.trim();
+    const rawText = valueEl.textContent.trim();
+    const realNumber = extractNumber(rawText);
 
-    // если HUD ещё рисует — не трогаем
-    if (!raw || raw === '0') return;
+    // если HUD ещё не дал число — не трогаем
+    if (realNumber === null) return;
 
-    const formatted = to8Digits(raw);
-    if (!formatted) return;
+    // если число не изменилось — ничего не делаем
+    if (realNumber === lastMoneyValue) return;
 
-    // если уже 8 знаков — не трогаем
-    if (raw === formatted) return;
+    // сохраняем новое реальное значение
+    lastMoneyValue = realNumber;
 
-    cashEl.textContent = formatted;
+    // форматируем и отображаем
+    valueEl.textContent = to8Digits(realNumber);
 }, 200);
+
 
 
 
