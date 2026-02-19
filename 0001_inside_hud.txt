@@ -234,7 +234,7 @@ function AddHud() {
         justify-content: center;
         transform: scale3d(.9,.9,1);
         transform-origin: 0% 100% 0px;
-        box-shadow: 0 0 .46vh #000000b3;
+        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.8);
       }
 
       #app .hud-hassle-map,#app .hud-hassle-map .map-mask,#app .hud-radmir-radar__radar,#app .window .window__image {
@@ -506,7 +506,7 @@ body #app .hud-radmir-info { display: none; }
     color: white;
     width: 4.6296vh;
     text-align: center;
-    left: 3vh;
+    left: 10vh;
     opacity: 1;
     font-size: 1.67vh;
     text-shadow: 0 0 .46vh #000000b3;
