@@ -1463,15 +1463,27 @@ money: (value) => {
         }
     }
 
-    function updateParam(paramClass, value) {
-        const paramElement = document.querySelector(`.Old-Fixed-Param.${paramClass}`);
-        if (paramElement) {
-            const progressBar = paramElement.querySelector(".Old-Progress__Values");
-            const valueText = paramElement.querySelector(".Old-Param-Values");
-            progressBar.style.width = `${value}%`;
-            valueText.textContent = value;
+function updateParam(paramClass, value) {
+    const paramElement = document.querySelector(`.Old-Fixed-Param.${paramClass}`);
+    if (!paramElement) return;
+
+    // === скрытие / показ брони ===
+    if (paramClass === 'armour') {
+        if (value <= 0) {
+            paramElement.style.display = 'none';
+            return;
+        } else {
+            paramElement.style.display = '';
         }
     }
+
+    const progressBar = paramElement.querySelector(".Old-Progress__Values");
+    const valueText = paramElement.querySelector(".Old-Param-Values");
+
+    if (progressBar) progressBar.style.width = `${value}%`;
+    if (valueText) valueText.textContent = value;
+}
+
 
     function initializeHudProxy() {
         const checkInterval = setInterval(() => {
