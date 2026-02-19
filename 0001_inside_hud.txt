@@ -1521,34 +1521,35 @@ AddHud();
     const cashEl = document.querySelector('.Old-Fixed-Cash');
     if (!cashEl) return;
 
-    let isUpdating = false;
+    let selfUpdate = false;
 
     function format(text) {
-        // сохраняем символ валюты
         const symbolMatch = text.match(/^[^\d]+/);
         const symbol = symbolMatch ? symbolMatch[0] : '';
 
         const digits = text.replace(/[^\d]/g, '');
         if (!digits) return null;
 
-        // если уже 8+ цифр — НЕ трогаем
         if (digits.length >= 8) return null;
 
         return symbol + digits.padStart(8, '0');
     }
 
     const observer = new MutationObserver(() => {
-        if (isUpdating) return;
+        if (selfUpdate) return;
 
-        const raw = cashEl.textContent.trim();
+        const raw = cashEl.textContent;
         if (!raw) return;
+
+        const digits = raw.replace(/[^\d]/g, '');
+        if (!digits || digits.length >= 8) return;
 
         const formatted = format(raw);
         if (!formatted) return;
 
-        isUpdating = true;
+        selfUpdate = true;
         cashEl.textContent = formatted;
-        isUpdating = false;
+        selfUpdate = false;
     });
 
     observer.observe(cashEl, {
@@ -1557,10 +1558,6 @@ AddHud();
         subtree: true
     });
 })();
-
-
-
-
 
 
 
