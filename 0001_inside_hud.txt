@@ -462,12 +462,14 @@ body #app .hud-radmir-info { display: none; }
         font-family: SAfonts!important;
       }
         .Old-Fixed-Cash::before {
-    content: "₽";              
-    font-family: "ALSRubl";
-    font-size: 20px;
-    color: #36662c;
-    line-height: 1;
-}
+        position: absolute;
+        content: "j";
+        font-family: ALSRubl;
+        left: -3.8889vh;
+        z-index: -1;
+        margin-top: .2778vh;
+        font-size: 5.0926vh;
+      }
         
 .Old-Fixed-Param {
         display: flex;
