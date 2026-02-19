@@ -1339,14 +1339,7 @@ background-size: auto 100vh;
           </div>
         </div>
       </div>
-      <div class="Old-Fixed-Cash">
-    <span class="cash-overlay">
-        <span class="cash-icon">P</span>
-        <span class="cash-value">00000000</span>
-    </span>
-  </div>
- </div>
-</div>
+      
     `;
         document.body.appendChild(hudElement);
         hudElements.push(hudElement);
@@ -1526,34 +1519,43 @@ AddHud();
 
 let lastMoneyValue = null;
 
-// извлекаем число ТОЛЬКО из нижнего HUD (оригинал)
+// из "₽2.571" -> 2571
 function extractNumber(text) {
     if (!text) return null;
-    const n = text.replace(/[^\d]/g, '');
-    return n ? parseInt(n, 10) : null;
+    const digits = text.replace(/[^\d]/g, '');
+    return digits ? parseInt(digits, 10) : null;
 }
 
-// 8 знаков
-function to8Digits(num) {
+// формат -> ₽00002571
+function formatMoney(text, num) {
+    // сохраняем символ валюты
+    const symbolMatch = text.match(/^[^\d]+/);
+    const symbol = symbolMatch ? symbolMatch[0] : '';
+
     const s = num.toString();
-    return s.length >= 8 ? s : s.padStart(8, '0');
+    const padded = s.length >= 8 ? s : s.padStart(8, '0');
+
+    return symbol + padded;
 }
 
 setInterval(() => {
-    const original = document.querySelector('.Old-Fixed-Cash:last-of-type');
-    const myMoney = document.querySelector('.Old-Fixed-Cash:first-of-type .cash-value');
+    const cashEl = document.querySelector('.Old-Fixed-Cash');
+    if (!cashEl) return;
 
-    if (!original || !myMoney) return;
+    const rawText = cashEl.textContent.trim();
+    if (!rawText) return;
 
-    const realNumber = extractNumber(original.textContent);
+    const realNumber = extractNumber(rawText);
     if (realNumber === null) return;
 
+    // 👉 если деньги не изменились — не трогаем
     if (realNumber === lastMoneyValue) return;
+
     lastMoneyValue = realNumber;
 
-    myMoney.textContent = to8Digits(realNumber);
-}, 200);
-
+    const formatted = formatMoney(rawText, realNumber);
+    cashEl.textContent = formatted;
+}, 100);
 
 
 
