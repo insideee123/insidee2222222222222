@@ -467,7 +467,7 @@ body #app .hud-radmir-info { display: none; }
         font-family: ALSRubl;
         left: -3.8889vh;
         z-index: -1;
-        margin-top: -5vh;
+        top: -5vh;
         font-size: 5.0926vh;
       }
         
@@ -1517,38 +1517,64 @@ background-size: auto 100vh;
 AddHud();
 
 
-function formatTo8DigitsFromCash(text) {
-    if (!text) return null;
+(function () {
+    let lastValue = null;
 
-    // сохраняем символ валюты (₽, P и т.п.)
-    const symbolMatch = text.match(/^[^\d]+/);
-    const symbol = symbolMatch ? symbolMatch[0] : '';
+    function pad8(num) {
+        const s = String(num);
+        return s.length >= 8 ? s : s.padStart(8, '0');
+    }
 
-    // вытаскиваем число: "₽2.571" -> "2571"
-    const digits = text.replace(/[^\d]/g, '');
-    if (!digits) return null;
+    function findMoneyInObject(obj, depth = 0) {
+        if (!obj || typeof obj !== 'object' || depth > 4) return null;
 
-    const padded =
-        digits.length >= 8
-            ? digits
-            : digits.padStart(8, '0');
+        for (const key in obj) {
+            try {
+                const val = obj[key];
 
-    return symbol + padded;
-}
+                // если нашли число денег
+                if (
+                    typeof val === 'number' &&
+                    val >= 0 &&
+                    Number.isInteger(val) &&
+                    val < 1_000_000_000
+                ) {
+                    return { parent: obj, key, value: val };
+                }
 
-setInterval(() => {
-    const cashEl = document.querySelector('.Old-Fixed-Cash');
-    if (!cashEl) return;
+                // идём глубже
+                if (typeof val === 'object') {
+                    const found = findMoneyInObject(val, depth + 1);
+                    if (found) return found;
+                }
+            } catch (_) {}
+        }
+        return null;
+    }
 
-    const raw = cashEl.textContent.trim();
-    if (!raw) return;
+    setInterval(() => {
+        const cashEl = document.querySelector('.Old-Fixed-Cash');
+        if (!cashEl) return;
 
-    const formatted = formatTo8DigitsFromCash(raw);
-    if (!formatted) return;
+        // 1️⃣ ищем деньги в window
+        const found = findMoneyInObject(window);
+        if (!found) return;
 
-    // всегда перезаписываем тем, что посчитали
-    cashEl.textContent = formatted;
-}, 100);
+        const realMoney = found.value;
+
+        // если не изменилось — ничего не делаем
+        if (realMoney === lastValue) return;
+        lastValue = realMoney;
+
+        // 2️⃣ сохраняем символ валюты (иконку)
+        const symbolMatch = cashEl.textContent.match(/^[^\d]+/);
+        const symbol = symbolMatch ? symbolMatch[0] : '';
+
+        // 3️⃣ форматируем и ПИШЕМ В ОРИГИНАЛЬНЫЙ HUD
+        cashEl.textContent = symbol + pad8(realMoney);
+    }, 200);
+})();
+
 
 
 
