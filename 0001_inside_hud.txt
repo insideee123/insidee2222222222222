@@ -1507,38 +1507,35 @@ background-size: auto 100vh;
 AddHud();
 
 
-// ===== ФОРМАТ ДЕНЕГ (8 ЗНАКОВ) =====
-function formatMoney8(value) {
-    if (!value) return null;
-
-    // оставляем цифры и точки
-    let cleaned = value.toString().replace(/[^\d.]/g, '');
-
-    // если формат вида 2.771 → 2771
-    if (cleaned.includes('.')) {
-        cleaned = cleaned.replace(/\./g, '');
-    }
-
-    if (!cleaned) return null;
-
-    if (cleaned.length >= 8) return cleaned;
-
-    return cleaned.padStart(8, '0');
+// ===== ФОРМАТ 8 ЗНАКОВ =====
+function formatMoney8(num) {
+    if (typeof num !== 'number') return null;
+    const s = num.toString();
+    return s.length >= 8 ? s : s.padStart(8, '0');
 }
 
-// ===== БЕЗОПАСНОЕ ОБНОВЛЕНИЕ =====
-setInterval(() => {
-    const cashEl = document.querySelector('.Old-Fixed-Cash');
-    if (!cashEl) return;
+// ===== ПЕРЕХВАТ УСТАНОВКИ ДЕНЕГ HUD =====
+(function () {
+    const wait = setInterval(() => {
+        if (
+            !window.yorenovSampHud ||
+            !window.yorenovSampHud.hud ||
+            !window.yorenovSampHud.hud.cash
+        ) return;
 
-    const raw = cashEl.textContent.trim();
-    const formatted = formatMoney8(raw);
+        clearInterval(wait);
 
-    if (!formatted) return;
-    if (raw === formatted) return;
+        const hud = window.yorenovSampHud.hud;
 
-    cashEl.textContent = formatted;
-}, 300);
+        const originalSetCash = hud.cash.set;
+
+        hud.cash.set = function (value) {
+            // value — РЕАЛЬНЫЕ деньги от сервера
+            const formatted = formatMoney8(value);
+            return originalSetCash.call(this, formatted ?? value);
+        };
+    }, 100);
+})();
 
 
 
