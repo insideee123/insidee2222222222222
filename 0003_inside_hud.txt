@@ -413,7 +413,6 @@ body #app .hud-radmir-info { display: none; }
         position: absolute;
         top: 4.537vh;
         right: 4.6667vh;
-        background: #000000;
       }
 
 .Old-Fixed-Weapon_icon {   // размер пнг худа
@@ -458,10 +457,7 @@ body #app .hud-radmir-info { display: none; }
     position: relative;
     z-index: 1;
 }
-    .Old-Fixed-Cash {
-        color: #36662c; // ЦВЕТ ДЕНЕГ
-        text-shadow: 0 -.463vh 0 #000300,0 -.463vh 0 #000300,0 .463vh 0 #000300,0 .463vh 0 #000300,-.463vh 0 0 #000300,.463vh 0 0 #000300,-.463vh 0 0 #000300,.463vh 0 0 #000300,-.0926vh -.463vh 0 #000300,.0926vh -.463vh 0 #000300,-.0926vh .463vh 0 #000300,.0926vh .463vh 0 #000300,-.463vh -.0926vh 0 #000300,.463vh -.0926vh 0 #000300,-.463vh .0926vh 0 #000300,.463vh .0926vh 0 #000300,-.1852vh -.463vh 0 #000300,.1852vh -.463vh 0 #000300,-.1852vh .463vh 0 #000300,.1852vh .463vh 0 #000300,-.463vh -.1852vh 0 #000300,.463vh -.1852vh 0 #000300,-.463vh .1852vh 0 #000300,.463vh .1852vh 0 #000300,-.2778vh -.463vh 0 #000300,.2778vh -.463vh 0 #000300,-.2778vh .463vh 0 #000300,.2778vh .463vh 0 #000300,-.463vh -.2778vh 0 #000300,.463vh -.2778vh 0 #000300,-.463vh .2778vh 0 #000300,.463vh .2778vh 0 #000300,-.3704vh -.463vh 0 #000300,.3704vh -.463vh 0 #000300,-.3704vh .463vh 0 #000300,.3704vh .463vh 0 #000300,-.463vh -.3704vh 0 #000300,.463vh -.3704vh 0 #000300,-.463vh .3704vh 0 #000300,.463vh .3704vh 0 #000300,-.463vh -.463vh 0 #000300,.463vh -.463vh 0 #000300,-.463vh .463vh 0 #000300,.463vh .463vh 0 #000300,-.463vh -.463vh 0 #000300,.463vh -.463vh 0 #000300,-.463vh .463vh 0 #000300,.463vh .463vh 0 #000300;
-      }
+
 .Old-Fixed-Cash {
         position: absolute;
         right: 4.8389vh;
@@ -469,13 +465,13 @@ body #app .hud-radmir-info { display: none; }
         transform: scale(1,.85);
         display: inline-flex;
         align-items: center;
-        font-weight: 900;
-        display: inline-block;
-        letter-spacing: .2778vh;
-        font-style: normal;
-        font-size: 7.5vh;
-        font-family: GothamPro Black Italic!important;
-      }
+    justify-content: flex-end;
+    color: white;
+    font-family: "GothamPro Black Italic";
+    font-style: italic;
+    font-size: 2.59vh;
+    text-shadow: 0 0 .46vh #00000080;
+}
         .Old-Fixed-Cash::before {
         position: absolute;
         content: "j";
@@ -577,6 +573,10 @@ display: none;
         position: absolute;
         right: 8.7037vh;
         top: 22.6852vh;
+          background-color: #00000091;
+  height: 75px;
+  width: 120px;
+}
       }
 
 .Wanted_row {
