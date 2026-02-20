@@ -460,8 +460,8 @@ body #app .hud-radmir-info { display: none; }
 
 .Old-Fixed-Cash {
         position: absolute;
-        right: 1.8389vh;
-        top: 4.0vh;
+        right: 2.8389vh;
+        top: 4.3vh;
         transform: scale(1,.85);
         display: inline-flex;
         align-items: center;
@@ -578,13 +578,13 @@ display: flex;
 
 .Old-Fixed-Wanted {
         position: absolute;
-        right: 5.7037vh;
-        top: 22.6852vh;
+        right: 6.0vh;
+        top: 21.6852vh;
           background-color: #000000cc;
           border-radius: 15px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 45px;
-  width: 180px;
+  width: 190px;
 }
       }
 
