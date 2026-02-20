@@ -1984,78 +1984,7 @@ background-size: auto 100vh;
           <path d="M31.5101 45H31.3101V45.2H31.5101V45ZM31.5101 44.1946L31.3637 44.0583L31.3101 44.1159V44.1946H31.5101ZM40.2688 34.7871L40.4152 34.9234L40.7283 34.5871H40.2688V34.7871ZM32.2708 34.7871H32.0708V34.9871H32.2708V34.7871ZM32.2708 33.1763V32.9763H32.0708V33.1763H32.2708ZM43.4233 33.1763H43.6233V32.9763H43.4233V33.1763ZM43.4233 33.8475L43.5692 33.9843L43.6233 33.9266V33.8475H43.4233ZM34.508 43.3556L34.3621 43.2188L34.0463 43.5556H34.508V43.3556ZM43.4233 43.3556H43.6233V43.1556H43.4233V43.3556ZM43.4233 45V45.2H43.6233V45H43.4233ZM31.7101 45V44.1946H31.3101V45H31.7101ZM31.6565 44.3309L40.4152 34.9234L40.1224 34.6508L31.3637 44.0583L31.6565 44.3309ZM40.2688 34.5871H32.2708V34.9871H40.2688V34.5871ZM32.4708 34.7871V33.1763H32.0708V34.7871H32.4708ZM32.2708 33.3763H43.4233V32.9763H32.2708V33.3763ZM43.2233 33.1763V33.8475H43.6233V33.1763H43.2233ZM43.2774 33.7107L34.3621 43.2188L34.6539 43.4924L43.5692 33.9843L43.2774 33.7107ZM34.508 43.5556H43.4233V43.1556H34.508V43.5556ZM43.2233 43.3556V45H43.6233V43.3556H43.2233ZM43.4233 44.8H31.5101V45.2H43.4233V44.8ZM46.1053 33.758L45.9652 33.6152L45.9638 33.6166L46.1053 33.758ZM58.6449 33.758L58.5021 33.898L58.5034 33.8994L58.6449 33.758ZM58.6449 44.4183L58.5034 44.2769L58.5021 44.2783L58.6449 44.4183ZM46.1053 44.4183L45.9638 44.5598L45.9652 44.5611L46.1053 44.4183ZM47.4923 43.3556H47.2923V43.5556H47.4923V43.3556ZM57.2802 43.3556V43.5556H57.4802V43.3556H57.2802ZM57.2802 34.7871H57.4802V34.5871H57.2802V34.7871ZM47.4923 34.7871V34.5871H47.2923V34.7871H47.4923ZM45.7236 35.9728C45.7236 34.8916 45.9195 34.2266 46.2467 33.8994L45.9638 33.6166C45.5155 34.065 45.3236 34.8765 45.3236 35.9728H45.7236ZM46.2453 33.9008C46.581 33.5715 47.241 33.3763 48.2977 33.3763V32.9763C47.2217 32.9763 46.4201 33.169 45.9652 33.6152L46.2453 33.9008ZM48.2977 33.3763H56.4748V32.9763H48.2977V33.3763ZM56.4748 33.3763C57.5329 33.3763 58.1823 33.572 58.5021 33.898L58.7877 33.6179C58.3468 33.1684 57.5494 32.9763 56.4748 32.9763V33.3763ZM58.5034 33.8994C58.8306 34.2266 59.0265 34.8916 59.0265 35.9728H59.4265C59.4265 34.8765 59.2347 34.065 58.7863 33.6166L58.5034 33.8994ZM59.0265 35.9728V42.2035H59.4265V35.9728H59.0265ZM59.0265 42.2035C59.0265 43.2847 58.8306 43.9497 58.5034 44.2769L58.7863 44.5597C59.2347 44.1113 59.4265 43.2998 59.4265 42.2035H59.0265ZM58.5021 44.2783C58.1823 44.6043 57.5329 44.8 56.4748 44.8V45.2C57.5494 45.2 58.3468 45.0079 58.7877 44.5584L58.5021 44.2783ZM56.4748 44.8H48.2977V45.2H56.4748V44.8ZM48.2977 44.8C47.241 44.8 46.581 44.6049 46.2453 44.2756L45.9652 44.5611C46.4201 45.0074 47.2217 45.2 48.2977 45.2V44.8ZM46.2467 44.2769C45.9195 43.9497 45.7236 43.2847 45.7236 42.2035H45.3236C45.3236 43.2998 45.5155 44.1113 45.9638 44.5597L46.2467 44.2769ZM45.7236 42.2035V35.9728H45.3236V42.2035H45.7236ZM47.4923 43.5556H57.2802V43.1556H47.4923V43.5556ZM57.4802 43.3556V34.7871H57.0802V43.3556H57.4802ZM57.2802 34.5871H47.4923V34.9871H57.2802V34.5871ZM47.2923 34.7871V43.3556H47.6923V34.7871H47.2923ZM62.2329 45H62.0329V45.2H62.2329V45ZM62.2329 33.1763V32.9763H62.0329V33.1763H62.2329ZM63.4746 33.1763L63.6078 33.0272L63.5509 32.9763H63.4746V33.1763ZM72.3228 41.0849L72.1895 41.234L72.1901 41.2345L72.3228 41.0849ZM73.6651 42.5726L73.5073 42.6955L73.8625 42.5404L73.6651 42.5726ZM73.4861 33.1763V32.9763H73.2861V33.1763H73.4861ZM75.2983 33.1763H75.4983V32.9763H75.2983V33.1763ZM75.2983 45V45.2H75.4983V45H75.2983ZM74.1908 45L74.0567 45.1484L74.1138 45.2H74.1908V45ZM65.0965 36.7782L64.9549 36.9198L64.9624 36.9266L65.0965 36.7782ZM64.6267 36.3532L64.4759 36.4852L64.4853 36.4946L64.6267 36.3532ZM64.403 36.1183L64.2512 36.2484L64.2562 36.2542L64.2616 36.2597L64.403 36.1183ZM64.1457 35.805L63.9844 35.9234L63.9885 35.9286L64.1457 35.805ZM63.9108 35.4471L64.0832 35.3457L63.7124 35.4724L63.9108 35.4471ZM64.0451 45V45.2H64.2451V45H64.0451ZM62.4329 45V33.1763H62.0329V45H62.4329ZM62.2329 33.3763H63.4746V32.9763H62.2329V33.3763ZM63.3413 33.3254L72.1895 41.234L72.456 40.9358L63.6078 33.0272L63.3413 33.3254ZM72.1901 41.2345C72.5726 41.5738 73.0116 42.0593 73.5073 42.6955L73.8229 42.4497C73.3192 41.8033 72.8634 41.297 72.4555 40.9352L72.1901 41.2345ZM73.8625 42.5404C73.7456 41.8247 73.6861 40.8674 73.6861 39.6642H73.2861C73.2861 40.8773 73.3459 41.8588 73.4677 42.6048L73.8625 42.5404ZM73.6861 39.6642V33.1763H73.2861V39.6642H73.6861ZM73.4861 33.3763H75.2983V32.9763H73.4861V33.3763ZM75.0983 33.1763V45H75.4983V33.1763H75.0983ZM75.2983 44.8H74.1908V45.2H75.2983V44.8ZM74.325 44.8516L65.2307 36.6299L64.9624 36.9266L74.0567 45.1484L74.325 44.8516ZM65.238 36.6368C65.2021 36.6009 65.1253 36.5326 65.015 36.4369L64.753 36.7392C64.8664 36.8375 64.9314 36.8959 64.9551 36.9197L65.238 36.6368ZM65.015 36.4369C64.9045 36.3412 64.8229 36.2664 64.7682 36.2117L64.4853 36.4946C64.5499 36.5592 64.6398 36.6411 64.753 36.7392L65.015 36.4369ZM64.7772 36.2215C64.7208 36.1569 64.6426 36.075 64.5444 35.9768L64.2616 36.2597C64.3573 36.3554 64.4283 36.4301 64.4762 36.4849L64.7772 36.2215ZM64.5549 35.9881C64.4672 35.8858 64.3832 35.7836 64.303 35.6815L63.9885 35.9286C64.0723 36.0353 64.1599 36.1419 64.2512 36.2484L64.5549 35.9881ZM64.307 35.6868C64.2292 35.5807 64.1546 35.467 64.0832 35.3457L63.7384 35.5485C63.8162 35.6807 63.8982 35.8057 63.9845 35.9233L64.307 35.6868ZM63.7124 35.4724C63.8005 36.1622 63.8451 37.0145 63.8451 38.0311H64.2451C64.2451 37.0043 64.2001 36.1339 64.1092 35.4218L63.7124 35.4724ZM63.8451 38.0311V45H64.2451V38.0311H63.8451ZM64.0451 44.8H62.2329V45.2H64.0451V44.8ZM78.45 45H78.25V45.2H78.45V45ZM78.45 33.1763V32.9763H78.25V33.1763H78.45ZM89.8375 33.1763H90.0375V32.9763H89.8375V33.1763ZM89.8375 34.7647V34.9647H90.0375V34.7647H89.8375ZM80.43 34.7647V34.5647H80.23V34.7647H80.43ZM80.43 38.0534H80.23V38.2534H80.43V38.0534ZM86.1796 38.0534H86.3796V37.8534H86.1796V38.0534ZM86.1796 39.6195V39.8195H86.3796V39.6195H86.1796ZM80.43 39.6195V39.4195H80.23V39.6195H80.43ZM80.43 43.378H80.23V43.578H80.43V43.378ZM89.927 43.378H90.127V43.178H89.927V43.378ZM89.927 45V45.2H90.127V45H89.927ZM78.65 45V33.1763H78.25V45H78.65ZM78.45 33.3763H89.8375V32.9763H78.45V33.3763ZM89.6375 33.1763V34.7647H90.0375V33.1763H89.6375ZM89.8375 34.5647H80.43V34.9647H89.8375V34.5647ZM80.23 34.7647V38.0534H80.63V34.7647H80.23ZM80.43 38.2534H86.1796V37.8534H80.43V38.2534ZM85.9796 38.0534V39.6195H86.3796V38.0534H85.9796ZM86.1796 39.4195H80.43V39.8195H86.1796V39.4195ZM80.23 39.6195V43.378H80.63V39.6195H80.23ZM80.43 43.578H89.927V43.178H80.43V43.578ZM89.727 43.378V45H90.127V43.378H89.727ZM89.927 44.8H78.45V45.2H89.927V44.8Z" fill="white" fill-opacity="0.5" />
           <rect width="123" height="52" fill="black" fill-opacity="0.2" /> </svg>
       </div>
-      <div style="display: none" class="YORENOV-speedometer__tachometer">
-        <img class="YORENOV-tachometer__arrow" src="${window.yorenovSampHud.hud.speedometer.arrow}" alt="">
-        <div class="YORENOV-tachometer__data">
-          <div id="YORENOV-tachometer-gear">
-            <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="">
-          </div>
-        </div>
-      </div>
-      <img class="YORENOV-speedometer-bg" src="${window.yorenovSampHud.hud.speedometer.speedometer_bg}" alt="" srcset="">
-      <div class="YORENOV-speedometer__speed">
-        <img class="YORENOV-speedometer-speed__arrow" src="${window.yorenovSampHud.hud.speedometer.arrow}" alt="" srcset="">
-        <div class="YORENOV-speedometer-speed__data">
-          <span class="YORENOV-speedometer-speed__value">
-            <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          </span>
-        </div>
-      </div>
-      <div class="YORENOV-speedometer__mileage">
-        <span class="YORENOV-speedometer-mileage__value">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
-        </span>
-        <img class="YORENOV-speedometer-mileage__icon" src="${window.yorenovSampHud.hud.speedometer.km_h}" alt="" srcset="">
-      </div>
-      <div class="YORENOV-speedometer__turns">
-        <div class="YORENOV-speedometer-turn__left"></div>
-        <div class="YORENOV-speedometer-turn__right"></div>
-      </div>
-      <div class="YORENOV-speedometer__params">
-        <div class="YORENOV-spedometer-param__lights YORENOV-spedometer-param--active"></div>
-        <div class="YORENOV-spedometer-param__key YORENOV-spedometer-param--active"></div>
-        <div class="YORENOV-spedometer-param__rem YORENOV-spedometer-param--active"></div>
-        <div class="YORENOV-spedometer-param__doors YORENOV-spedometer-param--active"></div>
-      </div>
-      <div class="YORENOV-speedometer__fuel">
-        <div class="YORENOV-speedometer-fuel__data YORENOV-speedometer-data">
-          <div class="YORENOV-speedometer-fuel__icon"></div>
-          <div class="YORENOV-speedometer-fuel__value">
-            <img class="YORENOV-digit YORENOV-digit-5 YORENOV-digit-small" src="${window.yorenovSampHud.hud.speedometer.digits[5]}" alt="" srcset="">
-            <img class="YORENOV-digit YORENOV-digit-4 YORENOV-digit-small" src="${window.yorenovSampHud.hud.speedometer.digits[4]}" alt="" srcset="">
-          </div>
-          <div class="YORENOV-speedometer-fuel__bar">
-            <div class="YORENOV-fuel-bar__value"></div>
-          </div>
-        </div>
-      </div>
-      <div class="YORENOV-speedometer__progress-bar">
-        <div class="YORENOV-speedometer__damage">
-          <div class="YORENOV-speedometer-damage__data">
-            <div class="YORENOV-speedometer-damage__icon">
-              <img class="YORENOV-damage__icon" src="${window.yorenovSampHud.hud.speedometer.damage_icon}" alt="" srcset="">
-            </div>
-            <div class="YORENOV-speedometer-damage__bar">
-              <div class="YORENOV-damage-bar__value"></div>
-            </div>
-          </div>
-        </div>
-        <div class="YORENOV-speedometer__wash">
-          <div class="YORENOV-speedometer-wash__data">
-            <div class="YORENOV-speedometer-wash__icon">
-              <img class="YORENOV-wash__icon" src="${window.yorenovSampHud.hud.speedometer.wash_icon}" alt="" srcset="">
-            </div>
-            <div class="YORENOV-speedometer-wash__bar">
-              <div class="YORENOV-wash-bar__value"></div>
-            </div>
-          </div>
-        </div>
-      </div>  
+      
     `;
         document.body.appendChild(hudElement);
         hudElements.push(hudElement);
@@ -2248,7 +2177,329 @@ function updateParam(paramClass, value) {
 }
 AddHud();
 
+const yorenovHud = {
+  getHtmlSpeedometer() {
+    return `
+      <div style="display: none" class="YORENOV-speedometer__tachometer">
+        <img class="YORENOV-tachometer__arrow" src="${window.yorenovSampHud.hud.speedometer.arrow}" alt="">
+        <div class="YORENOV-tachometer__data">
+          <div id="YORENOV-tachometer-gear">
+            <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="">
+          </div>
+        </div>
+      </div>
+      <img class="YORENOV-speedometer-bg" src="${window.yorenovSampHud.hud.speedometer.speedometer_bg}" alt="" srcset="">
+      <div class="YORENOV-speedometer__speed">
+        <img class="YORENOV-speedometer-speed__arrow" src="${window.yorenovSampHud.hud.speedometer.arrow}" alt="" srcset="">
+        <div class="YORENOV-speedometer-speed__data">
+          <span class="YORENOV-speedometer-speed__value">
+            <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          </span>
+        </div>
+      </div>
+      <div class="YORENOV-speedometer__mileage">
+        <span class="YORENOV-speedometer-mileage__value">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+          <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[0]}" alt="" srcset="">
+        </span>
+        <img class="YORENOV-speedometer-mileage__icon" src="${window.yorenovSampHud.hud.speedometer.km_h}" alt="" srcset="">
+      </div>
+      <div class="YORENOV-speedometer__turns">
+        <div class="YORENOV-speedometer-turn__left"></div>
+        <div class="YORENOV-speedometer-turn__right"></div>
+      </div>
+      <div class="YORENOV-speedometer__params">
+        <div class="YORENOV-spedometer-param__lights YORENOV-spedometer-param--active"></div>
+        <div class="YORENOV-spedometer-param__key YORENOV-spedometer-param--active"></div>
+        <div class="YORENOV-spedometer-param__rem YORENOV-spedometer-param--active"></div>
+        <div class="YORENOV-spedometer-param__doors YORENOV-spedometer-param--active"></div>
+      </div>
+      <div class="YORENOV-speedometer__fuel">
+        <div class="YORENOV-speedometer-fuel__data YORENOV-speedometer-data">
+          <div class="YORENOV-speedometer-fuel__icon"></div>
+          <div class="YORENOV-speedometer-fuel__value">
+            <img class="YORENOV-digit YORENOV-digit-5 YORENOV-digit-small" src="${window.yorenovSampHud.hud.speedometer.digits[5]}" alt="" srcset="">
+            <img class="YORENOV-digit YORENOV-digit-4 YORENOV-digit-small" src="${window.yorenovSampHud.hud.speedometer.digits[4]}" alt="" srcset="">
+          </div>
+          <div class="YORENOV-speedometer-fuel__bar">
+            <div class="YORENOV-fuel-bar__value"></div>
+          </div>
+        </div>
+      </div>
+      <div class="YORENOV-speedometer__progress-bar">
+        <div class="YORENOV-speedometer__damage">
+          <div class="YORENOV-speedometer-damage__data">
+            <div class="YORENOV-speedometer-damage__icon">
+              <img class="YORENOV-damage__icon" src="${window.yorenovSampHud.hud.speedometer.damage_icon}" alt="" srcset="">
+            </div>
+            <div class="YORENOV-speedometer-damage__bar">
+              <div class="YORENOV-damage-bar__value"></div>
+            </div>
+          </div>
+        </div>
+        <div class="YORENOV-speedometer__wash">
+          <div class="YORENOV-speedometer-wash__data">
+            <div class="YORENOV-speedometer-wash__icon">
+              <img class="YORENOV-wash__icon" src="${window.yorenovSampHud.hud.speedometer.wash_icon}" alt="" srcset="">
+            </div>
+            <div class="YORENOV-speedometer-wash__bar">
+              <div class="YORENOV-wash-bar__value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+  speedometer: {
+		barsValues: {
+			speed: { dashArray: 360, dashOffset: 180 },
+			fuel: { dashArray: 171, dashOffset: 0 },
+			wash: { dashArray: 103, dashOffset: 103 },
+			damage: { dashArray: 103, dashOffset: 103 }
+		},
 
+		data: {
+			speedometerEl: null,
+			speed: { valueEl: null, barEl: null },
+			fuel: { progress: null, valueEl: null, barEl: null },
+			wash: { progress: null, valueEl: null, barEl: null, wrapperEl: null },
+			damage: { progress: null, valueEl: null, barEl: null },
+			tachometer: { wrapper: null, gearEl: null, barEl: null },
+			mileageEl: null,
+			turnsEls: [],
+			paramsEls: []
+		},
+
+		onInfoSpeedChange(e, a) {
+			try {
+				console.log(`Speedometer change: ${e} = ${a}`); // Debug
+				
+				if (e === "damage") {
+					if (isNaN(a * 100)) a = 0;
+					this.setDamage(+a);
+				}
+				if (e === "wash") {
+					if (isNaN(a * 100)) a = 0;
+					this.setWash(+a);
+				}
+				if (e === "show" && +a == 1) this.show();
+				if (e === "show" && +a == 0) this.hide();
+				if (e === "speed") this.setSpeed(a);
+				if (e === "mileage") this.setMileage(a);
+				if (e === "fuel") this.setFuel(a);
+				if (e == "left") {
+					this.data.turnsEls[0].classList.toggle("YORENOV-speedometer-turn--active", +a);
+				}
+				if (e == "right") {
+					this.data.turnsEls[1].classList.toggle("YORENOV-speedometer-turn--active", +a);
+				}
+				if (e == "rem") {
+					this.data.paramsEls[2].classList.toggle("YORENOV-spedometer-param--active", +a);
+				}
+				if (e == "doors") {
+					this.data.paramsEls[3].classList.toggle("YORENOV-spedometer-param--active", +a);
+				}
+				if (e == "temperature") {
+					this.data.paramsEls[1].classList.toggle("YORENOV-spedometer-param--active", +a);
+				}
+				if (e == "lights") {
+					this.data.paramsEls[0].classList.toggle("YORENOV-spedometer-param--active", +a);
+				}
+				if (e === "tachometer-show") {
+					const display = +a >= 1 ? "" : "none";
+					this.data.tachometer.wrapper.style.display = display;
+				}
+				if (e === "tachometer") {
+					this.setGear(a.gear);
+					this.setTachometer(a.rpm, a.maxRpm);
+				}
+			} catch (error) {
+				yorenovHud.addChatMessage(`Speedometer error: ${error}`);
+			}
+		},
+
+		show() {
+			this.data.speedometerEl.style.right = "0vh";
+			this.data.speedometerEl.style.opacity = "1";
+			const greenZone = document.querySelector(".YORENOV-hud__green-zone");
+			if (greenZone) greenZone.style.bottom = "25vh";
+		},
+
+		hide() {
+			this.data.speedometerEl.style.right = "-70vh";
+			this.data.speedometerEl.style.opacity = "0";
+			const greenZone = document.querySelector(".YORENOV-hud__green-zone");
+			if (greenZone) greenZone.style.bottom = "5vh";
+		},
+
+		setGear(e) {
+			const gearValue = this.getBigSizeValue(e);
+			this.data.tachometer.gearEl.innerHTML = gearValue;
+		},
+
+		setTachometer(e, a) {
+			if (window.interface("Hud").speedometer.tachometer.show && e / a > 0.5) {
+				this.data.tachometer.barEl.src = `${window.yorenovSampHud.hud.speedometer.arrow_glow}`;
+			} else {
+				this.data.tachometer.barEl.src = `${window.yorenovSampHud.hud.speedometer.arrow}`;
+			}
+			if (e > a) e = a;
+			this.data.tachometer.barEl.style.transform = `rotate(${e / a * 327 + 180}deg)`;
+		},
+
+		setMileage(e) {
+			const mileageValue = this.getBigSizeValue(e);
+			this.data.mileageEl.innerHTML = mileageValue;
+		},
+
+		setSpeed(e) {
+			const speedValue = this.getBigSizeValue(e);
+			this.data.speed.valueEl.innerHTML = speedValue;
+			if (e > 360) e = 360;
+			const rotation = e / 360 * this.barsValues.speed.dashArray;
+			this.data.speed.barEl.style.transform = `rotate(${rotation}deg) scale(-1)`;
+		},
+
+		setDamage(e) {
+			this.data.damage.progress.style.width = `${Math.floor(e * 100)}%`;
+		},
+
+		setWash(e) {
+			this.data.wash.progress.style.width = `${Math.floor(e * 100)}%`;
+		},
+
+		setFuel(e) {
+			const fuelValue = this.getSmallSizeValue(e);
+			const percentage = e / window.interface("Hud").speedometer.maxFuel * 100;
+			let color = "#3ACB3B";
+
+			if (percentage <= 5) color = "#DB2C22";
+			else if (percentage <= 25) color = "#DB4222";
+			else if (percentage <= 35) color = "#DB7122";
+			else if (percentage <= 50) color = "#DB9C22";
+			else if (percentage <= 65) color = "#CFC023";
+			else if (percentage <= 80) color = "#9FC42B";
+			else if (percentage <= 90) color = "#6CC733";
+
+			this.data.fuel.valueEl.innerHTML = fuelValue;
+			this.data.fuel.progress.style.width = `${percentage}%`;
+			this.data.fuel.progress.style.backgroundColor = color;
+		},
+
+		getSmallSizeValue(e) {
+			const digits = e.toString().split("");
+			let result = "";
+			for (let i = 0; i < digits.length; i += 1) {
+				result += `<img class="YORENOV-digit YORENOV-digit-${digits[i]} YORENOV-digit-small" src="${window.yorenovSampHud.hud.speedometer.digits[digits[i]]}" alt="">`;
+			}
+			return result;
+		},
+
+		getBigSizeValue(e) {
+			const digits = e.toString().split("");
+			let result = "";
+			for (let i = 0; i < digits.length; i += 1) {
+				result += `<img class="YORENOV-digit YORENOV-digit-${digits[i]} YORENOV-digit-big" src="${window.yorenovSampHud.hud.speedometer.digits[digits[i]]}" alt="">`;
+			}
+			return result;
+		},
+
+		create(e) {
+			this.data.speedometerEl = e;
+			this.data.speed.valueEl = e.querySelector(".YORENOV-speedometer-speed__value");
+			this.data.speed.barEl = e.querySelector(".YORENOV-speedometer-speed__arrow");
+			this.data.fuel.valueEl = e.querySelector(".YORENOV-speedometer-fuel__value");
+			this.data.fuel.progress = e.querySelector(".YORENOV-fuel-bar__value");
+			this.data.wash.progress = e.querySelector(".YORENOV-wash-bar__value");
+			this.data.wash.valueEl = e.querySelector(".YORENOV-speedometer-wash__value");
+			this.data.damage.progress = e.querySelector(".YORENOV-damage-bar__value");
+			this.data.damage.valueEl = e.querySelector(".YORENOV-speedometer-damage__value");
+			this.data.mileageEl = e.querySelector(".YORENOV-speedometer-mileage__value");
+			this.data.paramsEls = e.querySelector(".YORENOV-speedometer__params").children;
+			this.data.turnsEls = e.querySelector(".YORENOV-speedometer__turns").children;
+			this.data.tachometer.barEl = e.querySelector(".YORENOV-tachometer__arrow");
+			this.data.tachometer.wrapper = e.querySelector(".YORENOV-speedometer__tachometer");
+			this.data.tachometer.gearEl = this.data.tachometer.wrapper.querySelector("#YORENOV-tachometer-gear");
+		},
+
+		init() {
+			const html = yorenovHud.getHtmlSpeedometer();
+			const element = this._createSpeedometerElement(html, "YORENOV-speedometer");
+			this.create(element);
+
+			// Установка начальных значений
+			if (window.interface && window.interface("Hud")) {
+				window.interface("Hud").speedometer.show = 0;
+			}
+		},
+
+		_createSpeedometerElement(html, className) {
+			const element = document.createElement("div");
+			try {
+				// Создание прокси для speedometer
+				if (window.interface && window.interface("Hud")) {
+					const speedometer = JSON.parse(JSON.stringify(window.interface("Hud").speedometer));
+					window.interface("Hud").speedometer = new Proxy(speedometer, {
+						set: (target, property, value) => {
+							yorenovHud.speedometer.onInfoSpeedChange(property, value);
+							return Reflect.set(target, property, value);
+						}
+					});
+
+					// Создание прокси для params
+					const params = JSON.parse(JSON.stringify(window.interface("Hud").speedometer.params));
+					window.interface("Hud").speedometer.params = new Proxy(params, {
+						set: (target, property, value) => {
+							yorenovHud.speedometer.onInfoSpeedChange(property, value);
+							return Reflect.set(target, property, value);
+						}
+					});
+
+					// Переопределение методов для тахометра
+					window.interface("Hud").showTachometer = () => {
+						yorenovHud.speedometer.onInfoSpeedChange("tachometer-show", 1);
+					};
+
+					window.interface("Hud").hideTachometer = () => {
+						yorenovHud.speedometer.onInfoSpeedChange("tachometer-show", 0);
+					};
+
+					// Переопределение метода для поворотников
+					const originalSetTurnLightStatus = window.interface("Hud").setTurnLightStatus;
+					window.interface("Hud").setTurnLightStatus = (isRight, status) => {
+						yorenovHud.speedometer.onInfoSpeedChange(isRight ? "right" : "left", status);
+						if (originalSetTurnLightStatus) {
+							originalSetTurnLightStatus(isRight, status);
+						}
+					};
+				}
+
+				// Создание стилей для скрытия стандартного спидометра
+				this._createSpeedometerStyles();
+
+				element.className = className;
+				element.innerHTML = html;
+				document.body.appendChild(element);
+				
+				yorenovHud.addChatMessage("Спидометр инициализирован");
+			} catch (error) {
+				yorenovHud.addChatMessage(`Error creating speedometer element: ${error}`);
+			}
+			return element;
+		},
+
+		_createSpeedometerStyles() {
+			const style = document.createElement("style");
+			style.textContent = `
+				body #app .hud-radmir-speedometer { display: none; }
+			`;
+			document.head.appendChild(style);
+		}
+	},
 
 (function () {
     if (window.__greenZoneFixed) return;
