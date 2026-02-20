@@ -1915,47 +1915,41 @@ background-size: auto 100vh;
       <div class="YORENOV-speedometer">
   <div style="display:none" class="YORENOV-speedometer__tachometer">
     <img class="YORENOV-tachometer__arrow"
-         src="${window.yorenovSampHud.hud.speedometer.arrow}">
+         src="">
     <div class="YORENOV-tachometer__data">
       <div id="YORENOV-tachometer-gear">
         <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big"
-             src="${window.yorenovSampHud.hud.speedometer.digits[0]}">
+             src="">
       </div>
     </div>
   </div>
-
   <img class="YORENOV-speedometer-bg"
-       src="${window.yorenovSampHud.hud.speedometer.speedometer_bg}">
-
+       src="">
   <div class="YORENOV-speedometer__speed">
     <img class="YORENOV-speedometer-speed__arrow"
-         src="${window.yorenovSampHud.hud.speedometer.arrow}">
+         src="">
     <div class="YORENOV-speedometer-speed__data">
       <span class="YORENOV-speedometer-speed__value">
         <img class="YORENOV-digit YORENOV-digit-0 YORENOV-digit-big"
-             src="${window.yorenovSampHud.hud.speedometer.digits[0]}">
+             src="">
       </span>
     </div>
   </div>
-
   <div class="YORENOV-speedometer__mileage">
     <span class="YORENOV-speedometer-mileage__value"></span>
     <img class="YORENOV-speedometer-mileage__icon"
-         src="${window.yorenovSampHud.hud.speedometer.km_h}">
+         src="">
   </div>
-
   <div class="YORENOV-speedometer__turns">
     <div class="YORENOV-speedometer-turn__left"></div>
     <div class="YORENOV-speedometer-turn__right"></div>
   </div>
-
   <div class="YORENOV-speedometer__params">
     <div class="YORENOV-spedometer-param__lights"></div>
     <div class="YORENOV-spedometer-param__key"></div>
     <div class="YORENOV-spedometer-param__rem"></div>
     <div class="YORENOV-spedometer-param__doors"></div>
   </div>
-
   <div class="YORENOV-speedometer__fuel">
     <div class="YORENOV-speedometer-fuel__data">
       <div class="YORENOV-speedometer-fuel__icon"></div>
@@ -1965,7 +1959,6 @@ background-size: auto 100vh;
       </div>
     </div>
   </div>
-
   <div class="YORENOV-speedometer__progress-bar">
     <div class="YORENOV-speedometer__damage">
       <div class="YORENOV-damage-bar__value"></div>
