@@ -571,11 +571,13 @@ display: none;
 
 .Old-Fixed-Wanted {
         position: absolute;
-        right: 8.7037vh;
+        right: 16.7037vh;
         top: 22.6852vh;
-          background-color: #00000091;
+          background-color: #000000ab;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 75px;
-  width: 120px;
+  width: 240px;
 }
       }
 
@@ -584,8 +586,8 @@ display: none;
         flex-direction: row;
       }
 .Wanted_row img {
-        width: 5.0926vh;
-        height: 5.0926vh;
+        width: 2.5vh;
+        height: 2.5vh;
       }
 .Old-Fixed-HudBottom {
     transform-origin: right bottom;
