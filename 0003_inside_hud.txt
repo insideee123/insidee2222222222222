@@ -411,7 +411,7 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Fixed-Weapon {
         position: absolute;
-background-position: center;
+       background-position: center;
         top: 10.0vh;
         right: 2.2667vh;
         background-color: #000000cc;
@@ -428,7 +428,7 @@ background-position: center;
         position: absolute;
         right: 2.5926vh;
         top: 10vh;
-        color: #000000;
+        color: #ffffff;
         width: 18.5185vh;
         text-align: center;
         display: flex;
@@ -465,9 +465,8 @@ background-position: center;
 
 .Old-Fixed-Cash {
         position: absolute;
-background-position: center;
         right: 1.9vh;
-        top: 12.3vh;
+        top: 12vh;
         transform: scale(1,.85);
         display: inline-flex;
         align-items: center;
@@ -476,6 +475,7 @@ background-position: center;
     font-family: "GothamPro Black Italic";
     font-style: italic;
     font-size: 2.59vh;
+    text-align: center;
     background-color: #000000cc;
     border-radius: 18px;
           height: 45px;
@@ -486,11 +486,10 @@ background-position: center;
         content: "j";
         font-family: ALSRubl;
         font-style: normal;
-    font-size: 2.59vh;
-        left: -6.8889vh;
+        font-size: 2.59vh;
+        left: -8.8889vh;
         z-index: -1;
-        top: 1vh;
-        font-size: 5.0926vh;
+        top: 0vh;
       }
         
 .Old-Fixed-Param {
@@ -524,14 +523,12 @@ display: none;
         opacity: 1;
         width: 4.6296vh;
         color: #ffffff;
-        text-shadow: 0 0 2vh #000;
-        font-size: 1.6667vh;
-        font-weight: 500;
-        right: 20vh;
-        top: 10vh
-        position: absolute;
-        display: flex;
-      }
+        font-weight: 300;
+   margin-top: -25vh;
+    margin-right: 28vh;
+    font-size: 1.67vh;
+    text-shadow: 0 0 .46vh #000000b3;
+}
   
 .Old-Fixed-Freeze_text {
     margin-right: 1vh;
@@ -584,7 +581,7 @@ display: none;
         position: absolute;
         right: 6.0vh;
         top: 29.2852vh;
-        background-position: center;
+        text-align: center;
           background-color: #000000cc;
           border-radius: 18px;
           height: 45px;
