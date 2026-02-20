@@ -413,11 +413,15 @@ body #app .hud-radmir-info { display: none; }
         position: absolute;
         top: 4.537vh;
         right: 4.6667vh;
+        background-color: #777777cc;
+        border-radius: 18px;
+          height: 150px;
+          width: 210px;
       }
 
 .Old-Fixed-Weapon_icon {   // размер пнг худа
-        height: 13.8704vh;
-        width: 13.8704vh;
+        height: 10.8704vh;
+        width: 10.8704vh;
       }
 .Old-Fixed-Weapon_ammo {
         position: absolute;
@@ -460,7 +464,7 @@ body #app .hud-radmir-info { display: none; }
 
 .Old-Fixed-Cash {
         position: absolute;
-        right: 2.2vh;
+        right: 2.35vh;
         top: 8.3vh;
         transform: scale(1,.85);
         display: inline-flex;
@@ -472,10 +476,8 @@ body #app .hud-radmir-info { display: none; }
     font-size: 2.59vh;
     background-color: #777777cc;
     border-radius: 18px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           height: 45px;
           width: 210px;
-    text-shadow: 0 0 .46vh #00000080;
 }
         .Old-Fixed-Cash::before {
         position: absolute;
