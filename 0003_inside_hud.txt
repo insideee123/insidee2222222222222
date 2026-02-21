@@ -476,20 +476,6 @@ body #app .hud-radmir-info { display: none; }
     height: 45px;
     width: 210px;
 }
-        .Old-Fixed-Cash::before {
-        position: absolute;
-        text-align: center;
-        content: "j";
-        color: #78d66c;
-        font-family: ALSRubl;
-        font-style: normal;
-        font-size: 25px;
-        position: absolute;
-        left: 25px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0.6;
-}
         
 .Old-Fixed-Param {
         display: flex;
@@ -522,6 +508,7 @@ body #app .hud-radmir-info { display: none; }
 }
     // цифорки на барах
 .Old-Param-Values {
+position: absolute;
         opacity: 1;
         width: 4.6296vh;
         color: #ffffff;
