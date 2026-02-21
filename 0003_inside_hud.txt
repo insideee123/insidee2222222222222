@@ -440,14 +440,14 @@ body #app .hud-radmir-info { display: none; }
     font-family: PricedownRus !important;
     font-weight: 900;
     font-style: normal;
-    font-size: 2.9vh;
+    font-size: 2.2vh;
     line-height: 1;
      text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
       }
 }
 .Ammo-full {
     font-style: normal;
-    font-size: 2.9vh;
+    font-size: 2.2vh;
     font-family: PricedownRus !important;
     line-height: 1;
      text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
@@ -463,15 +463,14 @@ body #app .hud-radmir-info { display: none; }
 
 .Old-Fixed-Cash {
     position: absolute;
-    display: flex;
-    align-items: center;     
+    display: flex;     
     justify-content: center; 
     top: 125px;
-    right: -2px;
-    color: white;
+    right: 0vh;
+    color: #ffffff;
     font-family: "GothamPro Black Italic";
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1;
     background-color: #000000cc;
     border-radius: 18px;
@@ -482,9 +481,10 @@ body #app .hud-radmir-info { display: none; }
         position: absolute;
         text-align: center;
         content: "j";
+        color: #78d66c;
         font-family: ALSRubl;
         font-style: normal;
-        font-size: 30px;
+        font-size: 25px;
         position: absolute;
         left: 16px;
         top: 50%;
