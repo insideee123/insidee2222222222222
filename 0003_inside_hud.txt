@@ -356,7 +356,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Logo {
         position: absolute;
         top: 1vh;
-        right: 3vh;
+        right: 4.8vh;
         transform-origin: top right;
             background-color: #000000cc;
     border-radius: 13px;
@@ -399,7 +399,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Weapon {
         position: absolute;
         top: 7.0vh;
-        right: 3.6vh;
+        right: 3.8vh;
         text-align: center;
         background-color: #000000cc;
         border-radius: 13px;
@@ -562,7 +562,7 @@ display: none;
 
 .Old-Fixed-Wanted {
         position: absolute;
-        right: 3.6vh;
+        right: 3.8vh;
         top: 26.2852vh;
         text-align: center;
           background-color: #000000cc;
