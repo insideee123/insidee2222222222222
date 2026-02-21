@@ -367,8 +367,13 @@ body #app .hud-radmir-info { display: none; }
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
-        width: 20.9259vh;
-        height: 5.5556vh;
+        width: 17.9259vh;
+        height: 3.5556vh;
+    background-color: #000000cc;
+    border-radius: 13px;
+    height: 45px;
+    width: 210px;
+}
       }
 .Old-Fixed-Bonus{
        background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);
@@ -399,7 +404,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Weapon {
         position: absolute;
         top: 10.0vh;
-        right: 4.2667vh;
+        right: 4vh;
         text-align: center;
         background-color: #000000cc;
         border-radius: 13px;
@@ -567,7 +572,7 @@ position: absolute;
 
 .Old-Fixed-Wanted {
         position: absolute;
-        right: 8.0vh;
+        right: 7.8vh;
         top: 29.2852vh;
         text-align: center;
           background-color: #000000cc;
