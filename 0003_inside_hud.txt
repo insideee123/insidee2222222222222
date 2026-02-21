@@ -388,19 +388,6 @@ body #app .hud-radmir-info { display: none; }
        font-style:italic;
        font-size:1.39vh;
       }
-             .YORENOV-hud__green-zone {
-        position: absolute;
-        transform-origin: bottom right;
-        right: 8vh;
-        bottom: 5vh;
-        transition: .35s;
-        z-index: -1;
-      }
-
-      .YORENOV-green-zone__image {
-        width: 11.3889vh;
-        height: 4.8148vh;
-      }
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
     display: flex;
@@ -412,7 +399,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Weapon {
         position: absolute;
         top: 10.0vh;
-        right: 2.2667vh;
+        right: 4.2667vh;
         text-align: center;
         background-color: #000000cc;
         border-radius: 13px;
@@ -434,6 +421,7 @@ body #app .hud-radmir-info { display: none; }
         display: block;
         justify-content: center;
         text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
+      
       }
 .Ammo-in-clip {
     font-family: PricedownRus !important;
@@ -441,12 +429,14 @@ body #app .hud-radmir-info { display: none; }
     font-style: normal;
     font-size: 2.2vh;
     line-height: 1;
+     text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
 }
 .Ammo-full {
     font-style: normal;
     font-size: 2.2vh;
     font-family: PricedownRus !important;
     line-height: 1;
+     text-shadow: 0 -.1852vh 0 #000,0 -.1852vh 0 #000,0 .1852vh 0 #000,0 .1852vh 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.1852vh 0 0 #000,.1852vh 0 0 #000,-.0926vh -.1852vh 0 #000,.0926vh -.1852vh 0 #000,-.0926vh .1852vh 0 #000,.0926vh .1852vh 0 #000,-.1852vh -.0926vh 0 #000,.1852vh -.0926vh 0 #000,-.1852vh .0926vh 0 #000,.1852vh .0926vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000,-.1852vh -.1852vh 0 #000,.1852vh -.1852vh 0 #000,-.1852vh .1852vh 0 #000,.1852vh .1852vh 0 #000;
 }
 .Old-Fixed-Params {
     height: 13vh;
@@ -457,19 +447,33 @@ body #app .hud-radmir-info { display: none; }
 }
 
 .Old-Fixed-Cash {
-position: absolute;
-    justify-content: center;
+    position: absolute;
+    display: flex;     
+    justify-content: center; 
     top: 125px;
     right: -1vh;
-    color: white;
+    color: #ffffff;
     font-family: "GothamPro Black Italic";
     font-style: italic;
-    font-size: 2.59vh;
-    text-shadow: 0 0 .46vh #00000080;
+    font-size: 25px;
     background-color: #000000cc;
     border-radius: 13px;
     height: 45px;
     width: 210px;
+}
+        .Old-Fixed-Cash::before {
+        position: absolute;
+        text-align: center;
+        content: "j";
+        color: #78d66c;
+        font-family: ALSRubl;
+        font-style: normal;
+        font-size: 25px;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.6;
 }
         
 .Old-Fixed-Param {
@@ -489,7 +493,7 @@ position: absolute;
         .Old-Param-Progress, .Old-Progress__Values {
         width: 7.2037vh;
         height: 1vh;
-        border-radius: 50vh;
+        border-radius: 50px;
         box-shadow: #000 0 0 0 .4167vh;
       }
 .Old-Progress__Values {
@@ -563,7 +567,7 @@ position: absolute;
 
 .Old-Fixed-Wanted {
         position: absolute;
-        right: 6.0vh;
+        right: 8.0vh;
         top: 29.2852vh;
         text-align: center;
           background-color: #000000cc;
