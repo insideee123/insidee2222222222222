@@ -270,7 +270,7 @@ body #app .hud-radmir-info { display: none; }
        border-radius: 50%;
        font-family:"GothamPro Black Italic";
        font-style:italic;
-       font-size:1.69vh;
+       font-size:1.42vh;
       }
 .Old-Fixed-Main, .Old-Fixed-Cash, .Wanted_row {
     align-items: center;
