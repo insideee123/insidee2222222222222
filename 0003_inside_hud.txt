@@ -394,7 +394,7 @@ body #app .hud-radmir-info { display: none; }
 }
 .Old-Fixed-Main {
     margin-top: 2vh;
-    margin-right: 3vh;
+    margin-right: 2vh;
 }
 .Old-Fixed-Weapon {
         position: absolute;
@@ -446,13 +446,14 @@ body #app .hud-radmir-info { display: none; }
     position: absolute;
     display: flex;     
     justify-content: center; 
-    top: 95px;
+    top: 92px;
     right: -1vh;
     color: #ffffff;
     font-family: "GothamPro Black Italic";
     font-style: italic;
     font-size: 25px;
     background-color: #000000cc;
+    box-shadow: #000 0 0 0 .4167vh;
     border-radius: 13px;
     height: 45px;
     width: 210px;
@@ -466,8 +467,9 @@ body #app .hud-radmir-info { display: none; }
         font-style: normal;
         font-size: 25px;
         position: absolute;
-        left: 30px;
-        top: 50%;
+        left: 35px;
+        top: 45%;
+        box-shadow: #000 0 0 0 .4167vh;
         transform: translateY(-50%);
         opacity: 0.6;
 }
@@ -487,11 +489,7 @@ body #app .hud-radmir-info { display: none; }
 }
   // под барами, ширина длина баров
         .Old-Param-Progress, .Old-Progress__Values {
-        width: 7.2037vh;
-        height: 1vh;
-        border-radius: 50px;
-        box-shadow: #000 0 0 0 .4167vh;
-      }
+display: none
 .Old-Progress__Values {
         opacity: 1;
       }
@@ -506,11 +504,11 @@ body #app .hud-radmir-info { display: none; }
     font-family: "GothamPro Black Italic";
     font-weight: 300;
     font-style: italic;
-    margin-top: 7vh;
-    margin-left: 4vh;
+    margin-top: 10vh;
+    margin-left: 1vh;
     color: white;
     width: 5.24vh;
-    font-size: 1.37vh;
+    font-size: 1.57vh;
     text-shadow: 0 0 .46vh #000000b3;
     background-color: #000000cc;
     border-radius: 13px;
