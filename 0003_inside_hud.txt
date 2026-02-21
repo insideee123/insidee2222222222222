@@ -464,7 +464,7 @@ body #app .hud-radmir-info { display: none; }
 .Old-Fixed-Cash {
                 position: absolute;
         top: 12.0vh;
-        right: 2.2667vh;
+        right: 0.2667vh;
     color: white;
     font-family: "GothamPro Black Italic";
     font-style: italic;
@@ -481,7 +481,7 @@ body #app .hud-radmir-info { display: none; }
         font-family: ALSRubl;
         font-style: normal;
         font-size: 2.59vh;
-        left: -14.8889vh;
+        left: 0.8889vh;
         z-index: -1;
         top: 0vh;
       }
@@ -578,22 +578,20 @@ body #app .hud-radmir-info { display: none; }
         position: absolute;
         right: 6.0vh;
         top: 29.2852vh;
-        margin-top: 1vh;
         text-align: center;
           background-color: #000000cc;
           border-radius: 18px;
           height: 45px;
           width: 210px;
 }
-      }
-
 .Wanted_row {
         display: flex;
-        flex-direction: row;
+align-items: flex-start;
+padding-top: 6px;
       }
 .Wanted_row img {
-        width: 2.86vh;
-        height: 2.8vh;
+        width: 2.36vh;
+        height: 2.3vh;
       }
 .Old-Fixed-HudBottom {
     transform-origin: right bottom;
